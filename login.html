@@ -60,13 +60,21 @@
           <i class="fab fa-apple"></i> CONTINUE WITH APPLE
         </button>
         <!-- LINE OR START -->
-
+        <div class="d-flex flex-row align-items-center mt-2">
+          <hr class="hr-or d-block" />
+          <div class="d-flex justify-content-center">
+            <span id="or" class="text-center font-weight-bolder mx-4">OR</span>
+          </div>
+          <hr class="hr-or d-block" />
+        </div>
         <!-- LINE OR END -->
+
+        <!-- EMAIL AND PASSWORD FORM -->
         <form>
           <div class="form-group">
             <input
               type="email"
-              class="form-control mt-3"
+              class="form-control mt-3 text-white"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Email address or username"
@@ -80,17 +88,32 @@
               placeholder="Password"
             />
           </div>
-          <div class="form-group form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1"
-              >Remember me</label
-            >
+          <div
+            class="form-group form-check d-flex flex-row justify-content-between"
+          >
+            <!-- CHECK BOX AND ITS LABEL -->
+            <div class="d-flex">
+              <div>
+                <input
+                  type="checkbox"
+                  class="form-check-input d-block"
+                  id="exampleCheck1"
+                />
+              </div>
+              <div>
+                <label
+                  id="check-label"
+                  class="form-check-label text-black-50 d-block"
+                  for="exampleCheck1"
+                  >Remember me</label
+                >
+              </div>
+            </div>
+            <!-- LOGIN GREEN BUTTON -->
+            <button id="btn-login" type="button" class="btn btn-lg text-white">
+              LOG IN
+            </button>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </form>
     </div>
