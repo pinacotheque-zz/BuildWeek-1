@@ -1,33 +1,62 @@
 :root {
     --spot-green: #1DB954; /* nb. official logo is a lighter green */
-    --spot-black: #191414; /* for background */
+    --spot-black: rgb(25, 20, 20); /* for background */
     --spot-blue: #3e5a9b; /* for button */
+}
+
+/* Bootstrap Global settings: 
+"Use a native font stack that selects the best font-family for each OS and device.
+For a more inclusive and accessible type scale, we use the browser’s default root font-size (typically 16px) so visitors can customize their browser defaults as needed.
+Use the $font-family-base, $font-size-base, and $line-height-base attributes as our typographic base applied to the <body>.
+Set the global link color via $link-color and apply link underlines only on :hover.
+Use $body-bg to set a background-color on the <body> (#fff by default)." */
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
 }
 
 /* home page - cards section */
 #home-cards {
     background-color: var(--spot-blue);
+    background: var(--spot-blue);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--spot-blue), var(--spot-black));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--spot-blue), var(--spot-black)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
-#home-cards .nav {
+#home-cards .topnav {
+    position: relative;
     overflow: hidden;
     text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
 }
 #home-cards .nav a {
     color: #979faa;
     text-align: center;
     display: block;
     text-align: center;
-    padding: 1vh 2vw;
+    padding: 1vh 1.2vw;
     text-decoration: none;
 }
+#home-cards a.active::before {
+    content: "";
+    opacity: 1;
+    background-color: var(--spot-green);
+    position: absolute;
+    top: 4vh;
+    left: 2.5vw;
+    width: 2vw;
+    height: 0.5vh;
+}
 #home-cards .nav a:hover, #home-cards .nav a.active {
-    border-bottom: 5px solid var(--spot-green);
     color: white;
 }
 #throwback .allcaps {
     padding-left: 0;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2vw;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -46,6 +75,6 @@
 #throwback .genres {
     padding-left: 0;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2vw;
     font-weight: 700;
 }
