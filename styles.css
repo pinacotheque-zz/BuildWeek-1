@@ -12,7 +12,7 @@ Use $body-bg to set a background-color on the <body> (#fff by default)."
 */
 body {
     background-color: var(--spot-black);
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif; /* Supposed to be the closest font to Spoitify Circular */
     font-size: $font-size-base;
     line-height: $line-height-base;
 }
