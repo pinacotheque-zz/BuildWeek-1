@@ -4,4 +4,29 @@
   --spot-blue: #3e5a9b; /* for button */
 }
 
-
+body {
+  background-color: var(--spot-black);
+}
+.container {
+  background-color: white;
+}
+.text-center {
+  text-align: center;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+form {
+  display: block;
+}
+#btn-fb {
+  background-color: var(--spot-blue);
+  border-radius: 30px;
+}
+#btn-apple {
+  background-color: var(--spot-black);
+  border-radius: 30px;
+}
