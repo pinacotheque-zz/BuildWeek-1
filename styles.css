@@ -3,3 +3,34 @@
     --spot-black: #191414; /* for background */
     --spot-blue: #3e5a9b; /* for button */
 }
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.sidebar{
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    background-color: #191414;
+    padding-top: 30px;
+    z-index: 1;
+    left: 0;
+    padding-left: 30px;
+}
+.sidebar img{
+    width: 150px ; 
+    image-rendering: optimizeQuality;
+    color: rgb(177, 172, 172);
+
+}
+.sidebar h6 img{
+    width: 20px;
+    color: #ffff;
+}
+
+.sidebar h6{
+    margin-top: 20px;
+    color: rgb(177, 172, 172) ;
+    font-weight: 700;
+}
