@@ -191,7 +191,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-skip-start-fill ml-5" style="color:rgb(177, 172, 172);" viewBox="0 0 16 16">
             <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0V4z"/>
           </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-play-circle mx-5 mb-3" style="color:rgb(177, 172, 172);" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-play-circle mx-5 mb-1" style="color:rgb(177, 172, 172);" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
           </svg>
@@ -204,26 +204,49 @@
           </svg>
         </div>
 
-        <div class="row songDur ">
+        <div class="row songDur align-items-center my-2">
             <div class="col">
-            <p class="mb-1 " style="color:#ffff;font-size: 10px;">00:00</p>
+            <p class=" mb-0" style="color:#ffff;font-size: 10px;">00:00</p>
           </div>
             <!-- <div class="progress">
                 <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div> -->
-            <div class="col">
+            <!-- <div class="col">
             <input type="range" class="custom-range" min="0" max="5" id="customRange2">
+              </div> -->
+              <div class="col ">
+              <hr  class="my-0" style=" width:600px; color: #ffff; height: 3px; margin-bottom: 10px; border: 1px solid rgb(88, 87, 87);background-color: rgb(88, 87, 87);border-radius: 3px;">
               </div>
             <div class="col">
-            <p class="mb-1" style="color:#ffff;font-size: 10px;">00:00</p>
+            <p class="mb-0" style="color:#ffff;font-size: 10px;">00:00</p>
             </div>
         </div>
 
         </div>
 
-        <div class=" col-lg-2 align-self-center">
-            <div class="row">
-            <svg xmlns="http://www.w3.org/2000/svg" style="color: #ffff;" height="15px"  viewBox="0 0 24 24" width="15px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
+        <div class=" col-lg-2 mt-3">
+            <div class="row align-items-center">
+              <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-text-paragraph" style="color:rgb(177, 172, 172)" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/>
+              </svg>  
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-display mx-3" style="color:rgb(177, 172, 172)"  viewBox="0 0 16 16">
+                <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+              </svg>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-up" style="color:rgb(177, 172, 172)" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"/>
+              </svg>
+            </div>
+            <div >
+              <hr  class="my-0 mx-2" style=" width:80px; color: #ffff; height: 3px; margin-bottom: 10px; border: 1px solid rgb(131, 129, 129);background-color: rgb(131, 129, 129);border-radius: 3px;">
+              </div>
+
             </div>
         </div>
     </div>
