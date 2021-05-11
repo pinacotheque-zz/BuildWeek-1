@@ -33,4 +33,46 @@
     margin-top: 20px;
     color: rgb(177, 172, 172) ;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.sidebar h6.active{
+     border-left: 3px solid var(--spot-green);
+    color: turquoise;
+}
+.player {
+   display: flex;
+    
+   
+}
+
+
+.side{
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-bottom: 100px;
+}
+
+#side{
+    cursor: pointer;
+}
+
+.items:hover{
+    color: #ffff;
+}
+
+
+
+#footer{
+   z-index: 2;
+    display: flex;
+    justify-content: center;
+   padding-top: 20px;
+     background-color: #383535;
+    position: fixed;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
 }
