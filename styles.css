@@ -1,0 +1,101 @@
+:root {
+  --spot-green: #1db954; /* nb. official logo is a lighter green */
+  --spot-black: #191414; /* for background */
+  --spot-blue: #3e5a9b; /* for button */
+}
+
+body {
+  background-color: var(--spot-black);
+}
+.container {
+  background-color: white;
+}
+.text-center {
+  text-align: center;
+}
+/* #main-container {
+  width: fit-content;
+} */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+/* form {
+  display: block;
+} */
+#btn-fb {
+  background-color: var(--spot-blue);
+  border-radius: 30px;
+  font-size: small;
+}
+#btn-apple {
+  background-color: var(--spot-black);
+  border-radius: 30px;
+  font-size: small;
+}
+#btn-signup {
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+}
+#btn-login {
+  background-color: var(--spot-green);
+  border-radius: 30px;
+  font-size: x-small;
+  padding-inline: 40px;
+}
+.small-txt {
+  font-size: small;
+}
+.hr-or {
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+}
+.x-small-txt {
+  font-size: x-small;
+}
+#p-forgot a {
+  color: var(--spot-green);
+  font-size: small;
+}
+#p-forgot a:hover {
+  font-weight: bolder;
+}
+.a-terms {
+  color: var(--spot-green);
+}
+.a-terms:hover {
+  color: var(--spot-green);
+  font-weight: bolder;
+}
+#footer-login,
+#footer-login > h6 {
+  font-size: xx-small;
+}
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.show > .btn-outline-dark.dropdown-toggle {
+  color: #fff;
+  background-color: var(--spot-green);
+  /* border-color: var(--spot-green); */
+}
+#btn-signup:hover {
+  background-color: var(--spot-black);
+  border-color: var(--spot-black);
+  color: white;
+}
+.btn-outline-dark:not(:disabled):not(.disabled):active {
+  border-color: var(--spot-green);
+}
+.form-control:focus {
+  border-color: var(--spot-green);
+}
+
+.custom-control-label:before {
+  background-color: transparent;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: var(--spot-green);
+}
