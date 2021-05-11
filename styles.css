@@ -61,8 +61,15 @@ body {
   color: var(--spot-green);
   font-size: small;
 }
+#p-forgot a:hover {
+  font-weight: bolder;
+}
 .a-terms {
   color: var(--spot-green);
+}
+.a-terms:hover {
+  color: var(--spot-green);
+  font-weight: bolder;
 }
 #footer-login,
 #footer-login > h6 {
@@ -74,7 +81,7 @@ body {
   background-color: var(--spot-green);
   /* border-color: var(--spot-green); */
 }
-#btn-signup .btn-outline-dark:hover {
+#btn-signup:hover {
   background-color: var(--spot-black);
   border-color: var(--spot-black);
   color: white;
@@ -84,4 +91,9 @@ body {
 }
 .form-control:focus {
   border-color: var(--spot-green);
+}
+exampleCheck1 input[type="checkbox"]:checked + label::after {
+  color: #fff;
+  border-color: #007bff;
+  background-color: red !important;
 }
