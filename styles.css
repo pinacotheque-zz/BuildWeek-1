@@ -1,5 +1,258 @@
 :root {
     --spot-green: #1DB954; /* nb. official logo is a lighter green */
-    --spot-black: #191414; /* for background */
-    --spot-blue: #3e5a9b; /* for button */
+    --spot-black: rgb(25, 20, 20); /* for background */
+    --spot-blue-grad: rgb(37, 69, 108);
+    --spot-transp: rgba(39,55,95,0.2); /* for gradient */
+    --spot-blue: rgb(39, 55, 95); /* for button */
 }
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+@font-face 
+    {font-family: "Circular Spotify Tx T Black"; src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot"); src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
+}
+body {
+    background-color: var(--spot-black);
+    
+}
+*{
+    font-family: 'Circular Spotify Tx T Black', sans-serif;
+    margin: 0;
+    color: white;
+}
+/***********home sidenav***********/
+/* sidenav can be reused! */
+.sidebar{
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    background-color: #191414;
+    padding-top: 30px;
+    z-index: 1;
+    left: 0;
+    padding-left: 30px;
+}
+.sidebar img{
+    width: 150px ; 
+    image-rendering: optimizeQuality;
+    color: rgb(177, 172, 172);
+}
+.sidebar h6 img{
+    width: 20px;
+    color: #ffff;
+}
+.sidebar h6{
+    margin-top: 20px;
+    color: rgb(177, 172, 172) ;
+    font-weight: 700;
+    cursor: pointer;
+}
+.sidebar h6.active{
+     border-left: 3px solid var(--spot-green);
+    color: turquoise;
+}
+.player {
+   display: flex;  
+}
+.side{
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-bottom: 100px;
+}
+#side{
+    cursor: pointer;
+}
+.items:hover{
+    color: #ffff;
+}
+/***********home cards section***********/
+/* cards can be reused! */
+ 
+#home-cards { 
+    background-color: var(--spot-blue);
+    background: var(--spot-blue);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, var(--spot-blue-grad), var(--spot-transp));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, var(--spot-blue-grad), var(--spot-transp)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* I am really strugglign with this. We need to work together on responsiveness */
+@media (min-width: 777px) and (max-width: 799px) {
+    .mainsection {
+        left: 0;
+        transform: translateX(0);
+    }
+}
+@media (min-width: 800px) and (max-width: 991px) {
+    
+}
+@media (min-width: 991px) and (max-width: 1299px) {
+    .mainsection {
+        left: 15%;
+        transform: translateX(-24%);
+    }
+}
+@media (min-width: 1300px) {
+    .mainsection {
+        left: 25%;
+        transform: translateX(-35%);
+    }
+}
+.nav#topnav {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.7em;
+    font-weight: 700;
+}
+.nav#topnav a {
+    color: #979faa;
+    text-align: center;
+    display: block;
+    text-align: center;
+    padding: 1vh 1vw;
+    text-decoration: none;
+}
+.nav#topnav a.active::before { /* section nav green border */ 
+    content: "";
+    opacity: 1;
+    background-color: var(--spot-green);
+    position: absolute;
+    top: 4vh;
+    left: 5.5%;
+    width: 6%;
+    height: 0.5vh;
+}
+.nav#topnav a:hover, .nav#topnav a.active {
+    color: white;
+}
+ 
+.card-collection .allcaps, .card-collection .genres { /* #THROWBACKTHURSDAY and Classifiche*/
+    padding-left: 5px;
+    color: white;
+    font-size: 1.8em; 
+    font-weight: 700;
+}
+.card-collection .allcaps {
+    text-transform: uppercase;
+}
+.card-collection .card {
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+}
+.card-collection p {
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+#card-col {
+    min-width: 10vw;
+}
+/***********login page***********/
+.container {
+    background-color: white;
+  }
+  .text-center {
+    text-align: center;
+  }
+  /* #main-container {
+    width: fit-content;
+  } */
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  /* form {
+    display: block;
+  } */
+  #btn-fb {
+    background-color: var(--spot-blue);
+    border-radius: 30px;
+    font-size: small;
+  }
+  #btn-apple {
+    background-color: var(--spot-black);
+    border-radius: 30px;
+    font-size: small;
+  }
+  #btn-signup {
+    border-radius: 30px;
+    font-size: small;
+    font-weight: bolder;
+  }
+  #btn-login {
+    background-color: var(--spot-green);
+    border-radius: 30px;
+    font-size: x-small;
+    padding-inline: 40px;
+  }
+  .small-txt {
+    font-size: small;
+  }
+  .hr-or {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+  .x-small-txt {
+    font-size: x-small;
+  }
+  #p-forgot a {
+    color: var(--spot-green);
+    font-size: small;
+  }
+  #p-forgot a:hover {
+    font-weight: bolder;
+  }
+  .a-terms {
+    color: var(--spot-green);
+  }
+  .a-terms:hover {
+    color: var(--spot-green);
+    font-weight: bolder;
+  }
+  .btn-outline-dark:not(:disabled):not(.disabled):active,
+  .show > .btn-outline-dark.dropdown-toggle {
+    color: #fff;
+    background-color: var(--spot-green);
+    /* border-color: var(--spot-green); */
+  }
+  #btn-signup:hover {
+    background-color: var(--spot-black);
+    border-color: var(--spot-black);
+    color: white;
+  }
+  .btn-outline-dark:not(:disabled):not(.disabled):active {
+    border-color: var(--spot-green);
+  }
+  .form-control:focus {
+    border-color: var(--spot-green);
+  }
+  
+  .custom-control-label:before {
+    background-color: transparent;
+  }
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--spot-green);
+  }
+/***********footers***********/
+#footer-home{ /* home page footer */
+    z-index: 2;     
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #383535;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+ }
+#footer-login, #footer-login > h6 { /* login page footer */
+  font-size: xx-small;
+}
+
