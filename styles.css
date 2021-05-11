@@ -9,15 +9,6 @@
 @font-face 
     {font-family: "Circular Spotify Tx T Black"; src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot"); src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
 }
-
-/* Bootstrap Global settings: 
-"Use a native font stack that selects the best font-family for each OS and device.
-For a more inclusive and accessible type scale, we use the browser’s default root font-size (typically 16px) so visitors can customize their browser defaults as needed.
-Use the $font-family-base, $font-size-base, and $line-height-base attributes as our typographic base applied to the <body>.
-Set the global link color via $link-color and apply link underlines only on :hover.
-Use $body-bg to set a background-color on the <body> (#fff by default)." 
-*/
-
 body {
     background-color: var(--spot-black);
     font-size: $font-size-base;
@@ -28,7 +19,8 @@ body {
     margin: 0;
     color: white;
 }
-/* sidenav - Gamze :) */
+/***********home sidenav***********/
+/* sidenav can be reused! */
 .sidebar{
     width: 260px;
     height: 100%;
@@ -74,7 +66,8 @@ body {
 .items:hover{
     color: #ffff;
 }
-/* cards section background - Sarah :)*/
+/***********home cards section***********/
+/* cards can be reused! */
 .mainsection {
 }
 #home-cards { 
@@ -138,7 +131,6 @@ body {
 .nav#topnav a:hover, .nav#topnav a.active {
     color: white;
 }
-/* cards collections */
 .card-collection {
 
 }
@@ -164,8 +156,97 @@ body {
 #card-col {
     min-width: 10vw;
 }
-/* footer */
-#footer{
+/***********login page***********/
+.container {
+    background-color: white;
+  }
+  .text-center {
+    text-align: center;
+  }
+  /* #main-container {
+    width: fit-content;
+  } */
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  /* form {
+    display: block;
+  } */
+  #btn-fb {
+    background-color: var(--spot-blue);
+    border-radius: 30px;
+    font-size: small;
+  }
+  #btn-apple {
+    background-color: var(--spot-black);
+    border-radius: 30px;
+    font-size: small;
+  }
+  #btn-signup {
+    border-radius: 30px;
+    font-size: small;
+    font-weight: bolder;
+  }
+  #btn-login {
+    background-color: var(--spot-green);
+    border-radius: 30px;
+    font-size: x-small;
+    padding-inline: 40px;
+  }
+  .small-txt {
+    font-size: small;
+  }
+  .hr-or {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+  .x-small-txt {
+    font-size: x-small;
+  }
+  #p-forgot a {
+    color: var(--spot-green);
+    font-size: small;
+  }
+  #p-forgot a:hover {
+    font-weight: bolder;
+  }
+  .a-terms {
+    color: var(--spot-green);
+  }
+  .a-terms:hover {
+    color: var(--spot-green);
+    font-weight: bolder;
+  }
+  .btn-outline-dark:not(:disabled):not(.disabled):active,
+  .show > .btn-outline-dark.dropdown-toggle {
+    color: #fff;
+    background-color: var(--spot-green);
+    /* border-color: var(--spot-green); */
+  }
+  #btn-signup:hover {
+    background-color: var(--spot-black);
+    border-color: var(--spot-black);
+    color: white;
+  }
+  .btn-outline-dark:not(:disabled):not(.disabled):active {
+    border-color: var(--spot-green);
+  }
+  .form-control:focus {
+    border-color: var(--spot-green);
+  }
+  
+  .custom-control-label:before {
+    background-color: transparent;
+  }
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: var(--spot-green);
+  }
+/***********footers***********/
+#footer-home{ /* home page footer */
     z-index: 2;     
     display: flex;
     justify-content: center;
@@ -177,4 +258,7 @@ body {
     height: 100px;
     width: 100%;
  }
+#footer-login, #footer-login > h6 { /* login page footer */
+  font-size: xx-small;
+}
 
