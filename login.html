@@ -45,6 +45,7 @@
 
       <!-- FORM START -->
       <form class="form-signin">
+        <!-- FACEBOOK BTN -->
         <button
           id="btn-fb"
           class="btn btn-lg btn-block text-white text-nowrap"
@@ -52,6 +53,7 @@
         >
           <i class="fab fa-facebook"></i> CONTINUE WITH FACEBOOK
         </button>
+        <!-- APPLE BTN -->
         <button
           id="btn-apple"
           class="btn btn-lg btn-block text-white"
@@ -63,7 +65,9 @@
         <div class="d-flex flex-row align-items-center mt-2">
           <hr class="hr-or d-block" />
           <div class="d-flex justify-content-center">
-            <span id="or" class="text-center font-weight-bolder mx-4">OR</span>
+            <span class="text-center font-weight-bolder mx-4 x-small-txt"
+              >OR</span
+            >
           </div>
           <hr class="hr-or d-block" />
         </div>
@@ -102,8 +106,7 @@
               </div>
               <div>
                 <label
-                  id="check-label"
-                  class="form-check-label text-black-50 d-block"
+                  class="form-check-label text-black-50 d-block small-txt"
                   for="exampleCheck1"
                   >Remember me</label
                 >
@@ -115,7 +118,31 @@
             </button>
           </div>
         </form>
+        <!-- FORGOT YOUR PASSWORD LINK -->
+        <p id="p-forgot" class="text-center">
+          <a href="#">Forgot your password?</a>
+        </p>
+        <hr />
+        <div class="d-flex justify-content-center mb-3">
+          <span class="text-center font-weight-bolder small-txt"
+            >Don't have an account?</span
+          >
+        </div>
+
+        <button
+          id="btn-signup"
+          class="btn btn-lg btn-block btn-outline-dark form-signin"
+          type="submit"
+        >
+          SIGN UP FOR SPOTIFY
+        </button>
+        <hr />
       </form>
+      <div id="footer-login" class="d-flex justify-content-center mb-3 form-signin">
+          <h6 class="text-center text-muted">
+            If you click "Log in with Facebook" and are not Spotify user, you will be registered and you agree to Spotify's <a class="a-terms" href="">Terms & Conditions</a> and <a class="a-terms" href="">Privacy Policy</a>
+          </h6>
+        </div>
     </div>
 
     <script

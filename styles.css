@@ -22,9 +22,9 @@ body {
   padding: 15px;
   margin: 0 auto;
 }
-form {
+/* form {
   display: block;
-}
+} */
 #btn-fb {
   background-color: var(--spot-blue);
   border-radius: 30px;
@@ -35,13 +35,18 @@ form {
   border-radius: 30px;
   font-size: small;
 }
+#btn-signup {
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+}
 #btn-login {
   background-color: var(--spot-green);
   border-radius: 30px;
   font-size: x-small;
   padding-inline: 40px;
 }
-#check-label {
+.small-txt {
   font-size: small;
 }
 .hr-or {
@@ -49,6 +54,34 @@ form {
   text-align: left;
   margin-left: 0;
 }
-#id {
-    font-size: xx-large;
+.x-small-txt {
+  font-size: x-small;
+}
+#p-forgot a {
+  color: var(--spot-green);
+  font-size: small;
+}
+.a-terms {
+  color: var(--spot-green);
+}
+#footer-login,
+#footer-login > h6 {
+  font-size: xx-small;
+}
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.show > .btn-outline-dark.dropdown-toggle {
+  color: #fff;
+  background-color: var(--spot-green);
+  /* border-color: var(--spot-green); */
+}
+#btn-signup .btn-outline-dark:hover {
+  background-color: var(--spot-black);
+  border-color: var(--spot-black);
+  color: white;
+}
+.btn-outline-dark:not(:disabled):not(.disabled):active {
+  border-color: var(--spot-green);
+}
+.form-control:focus {
+  border-color: var(--spot-green);
 }
