@@ -21,36 +21,135 @@
 </head>
   <body>
     
-    <div class="container-fluid sidebar">
-        <div class="row ">
-            <div class="col side" id="side">
+    <div class="container-fluid" id="home-cards">
+        <div class="row">
+          <div class="sidebar">
+            <div class="col side px-3" id="side">
+              <div>
+                <img class="mb-3" src="images/Spotify_Logo_RGB_White.png" alt="spotify logo"/>
 
-                <div>
-                    <img class="mb-3" src="images/Spotify_Logo_RGB_White.png" alt="spotify logo"/>
-                
-                <a href="#home"  class=" items"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door mr-3" viewBox="0 0 16 16">
-                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
-                  </svg> Home</a>
+                <!-- // removed links except for home - SF //  -->                
+                <a href="#home" class="items active"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door mr-3" viewBox="0 0 16 16"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/></svg> Home</a>
 
-                <a href="#search"  class=" items" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search mr-3" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg>Search</a>
+                <a href="#" class="items" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search mr-3" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>Search</a>
 
-                <a href="#library"  class=" items"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-collection mr-3" viewBox="0 0 16 16">
-                    <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
-                  </svg>Your Library</a>
+                <a href="#" class="items"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-collection mr-3" viewBox="0 0 16 16"><path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/></svg>Your Library</a>
+              </div>
+              <div>
+                <a href="#" class="items"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle mr-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/></svg>Install App</a>
+              </div>
+            </div> 
+          </div>
+            <div class="col col-md-8 offset-2 mainsection pl-3">
+              <!-- sarah here-->
+              <div class="container pl-1">
+                <div class="row">
+                    <div class="col pt-2 d-flex">
+                        <div class="nav" id="topnav">
+                          <a href="#" class="active">Trending</a>
+                          <a href="#">Podcast</a>
+                          <a href="#">Moods and Genres</a>
+                          <a href="#">New Releases</a>
+                          <a href="#">Discover</a> 
+                        </div>
+                    </div>
                 </div>
-                  <div>
-                    <a href="#install" class="items"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle mr-3" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-                      </svg>Install App</a>
+                <div class="row pt-4 mr-0 ml-0 card-collection">
+                    <div class="col-12 pb-2 allcaps">
+                        #THROWBACKTHURSDAY
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://i.scdn.co/image/ab67706f00000003dafe7903bdd85921f50f1a48" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">Italian Karaoke</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://i.scdn.co/image/ab67706f00000003ad61c9af0cffaed7981cac1c" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">Lyricists</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5X3bxqSlvEcWUfWb8vgRZcSYGzrCr5iKBQ&usqp=CAU" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">Italy's Frequent Rotation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://i.scdn.co/image/ab67706f0000000368ebc79b987ca9f11b61b715" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">00s Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://i.scdn.co/image/ab67706f000000021907f15a148948007f05dde9" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">Cocktail Hour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://i.scdn.co/image/ab67706f000000035f4b625f7dfcb4733381bac3" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">I Love My '90s Hip-Hop</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>                           
+                <div class="row pt-4 ml-0 card-collection">
+                    <div class="col-12 pb-2 genres">
+                        Classifiche
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_it_large.jpg" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">Top 50 - Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://charts-images.scdn.co/REGIONAL_GLOBAL_DEFAULT.jpg" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">Top 50 - Global</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://www.kolibrimusic.com/wp-content/uploads/2018/03/spotify-viral-50-global.jpg" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">Viral 50 - Global</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="https://i.scdn.co/image/ab67706c0000bebb75f1f303c9c5de2cefd2c3d0" alt="Card image">
+                            <div class="card-img">
+                              <p class="card-p">Viral 50 - Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>                           
         </div>          
     </div>
            
 
-    <footer id="footer" >
+    <footer id="footer-home" >
     <div class="container-fluid">
     
     <div class="row player d-flex  ">

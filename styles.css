@@ -9,7 +9,7 @@
 @font-face 
     {font-family: "Circular Spotify Tx T Black"; src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot"); src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
 }
-#login-body {
+body {
     background-color: var(--spot-black);
     
 }
@@ -21,7 +21,7 @@
 /***********home sidenav***********/
 /* sidenav can be reused! */
 .sidebar{
-    width: 260px;
+    width: 230px; /*width: 260px;*/
     height: 100%;
     position: fixed;
     background-color: #191414;
@@ -30,104 +30,83 @@
     left: 0;
     padding-left: 0;
     margin: 0;
-
 }
 .sidebar img{
-    margin-left: 10px !important;
+    margin-left: 40px !important;
     justify-content: center;
     display: flex;
     padding-left: 10px;
     padding-bottom: 15px;
-    width: 150px ; 
+    width: 120px; /*150px*/
     image-rendering: optimizeQuality;
     color: rgb(177, 172, 172);
 
 }
 .sidebar a img{
-    width: 20px;
-    color: #ffff;
+    width: 12px; /*20px*/
+    color: #fff;
 }
-
 .sidebar a{
     display: block;
-    padding-left: 18px;
+    padding-left: 10px; /*18px*/
+    margin-left: 40px; 
     margin-top: 20px;
-    color: rgb(177, 172, 172) ;
+    color: rgb(177, 172, 172);
+    font-size: 0.7em; /* added  16:21 11/5/21*/
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
 }
-
-.sidebar a:focus{
-    
+.sidebar a.active{ /* added a class of active to home so it looks exactly like the screenshot, in navbar, click makes link active */ 
     border-left: 4px solid var(--spot-green);
-    color: #ffff;
+    color: #fff;
 }
 .player {
-   display: flex;  
-   
+    display: flex;     
 }
-
 @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+  .sidebar a {
+    float: left;
   }
-  
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
+  div.content {
+      margin-left: 0;
   }
-
-.side{
-    height:90vh;
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-    padding-bottom: 100px;
+}  
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.side {
+  height:90vh;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding-bottom: 100px;
 }
 #side{
-    cursor: pointer;
+  cursor: pointer;
 }
 .items:hover{
-    color: #ffff;
+  color: #fff;
 }
 /***********home cards section***********/
-/* cards can be reused! */
- 
+/* cards can be reused! */ 
 #home-cards { 
+    height: 97vh !important; /*important!*/
     background-color: var(--spot-blue);
     background: var(--spot-blue);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(135deg, var(--spot-blue-grad), var(--spot-transp));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(135deg, var(--spot-blue-grad), var(--spot-transp)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(90deg, var(--spot-blue-grad), var(--spot-black));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg, var(--spot-blue-grad), var(--spot-black)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/* I am really strugglign with this. We need to work together on responsiveness */
-@media (min-width: 777px) and (max-width: 799px) {
-    .mainsection {
-        left: 0;
-        transform: translateX(0);
-    }
-}
-@media (min-width: 800px) and (max-width: 991px) {
-    
-}
-@media (min-width: 991px) and (max-width: 1299px) {
-    .mainsection {
-        left: 15%;
-        transform: translateX(-24%);
-    }
-}
-@media (min-width: 1300px) {
-    .mainsection {
-        left: 25%;
-        transform: translateX(-35%);
-    }
+.mainsection {
+  left: 50px;
 }
 .nav#topnav {
     position: relative;
@@ -136,7 +115,7 @@
     overflow: hidden;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: 700;
 }
 .nav#topnav a {
@@ -152,19 +131,21 @@
     opacity: 1;
     background-color: var(--spot-green);
     position: absolute;
-    top: 4vh;
+    top: 3vh;
     left: 5.5%;
     width: 6%;
     height: 0.5vh;
 }
 .nav#topnav a:hover, .nav#topnav a.active {
     color: white;
+} 
+.card-collection {
+  margin-top: 10px;
 }
- 
 .card-collection .allcaps, .card-collection .genres { /* #THROWBACKTHURSDAY and Classifiche*/
     padding-left: 5px;
     color: white;
-    font-size: 1.8em; 
+    font-size: 1.7em; 
     font-weight: 700;
 }
 .card-collection .allcaps {
@@ -176,15 +157,16 @@
     text-align: center;
 }
 .card-collection p {
+    color: #979faa;
     padding-top: 5px;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
 }
 #card-col {
-    min-width: 10vw;
+    min-width: 10vw; /*12vw is the most accurate size to match screenshot, but it doesn't fit on one row on our page */
 }
 /***********login page***********/
-.container {
+#main-container {
     background-color: white;
   }
   .text-center {
@@ -288,36 +270,25 @@
 #footer-login, #footer-login > h6 { /* login page footer */
   font-size: xx-small;
 }
-
 .items:hover{
-    color: #ffff;
+  color: #ffff;
 }
-
-
-
-#footer{
- 
-   z-index: 2;
-   
-    
-   padding-top: 10px;
-     background-color: #383535;
-    position: fixed;
-    bottom: 0;
-    height: 120px;
-    width: 100%;
+#footer-home{ 
+  z-index: 2;
+  padding-top: 10px; /*20px*/
+  background-color: #383535;
+  position: fixed;
+  bottom: 0;
+  height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
+  width: 100%;
 }
-
-.player{
-   
-    flex-wrap: nowrap;
-    flex-direction: row;
+.player{   
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
-
-.nowPlaying{
- 
+.nowPlaying{ 
 }
-#footer img{
+#footer-home img{
     width: 90px;
     height: 90px;   
 }
