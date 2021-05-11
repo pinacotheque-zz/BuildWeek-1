@@ -11,7 +11,7 @@ Set the global link color via $link-color and apply link underlines only on :hov
 Use $body-bg to set a background-color on the <body> (#fff by default)." 
 */
 body {
-    background-color: var(--spot-black);
+    background-color: green; /*var(--spot-black);*/
     font-family: 'Lato', sans-serif; /* Supposed to be the closest font to Spoitify Circular */
     font-size: $font-size-base;
     line-height: $line-height-base;
@@ -22,7 +22,7 @@ body {
     color: white;
 }
 .sidebar{
-    width: 18vw;
+    width: 260px;
     height: 100%;
     position: fixed;
     background-color: #191414;
@@ -35,7 +35,6 @@ body {
     width: 150px ; 
     image-rendering: optimizeQuality;
     color: rgb(177, 172, 172);
-
 }
 .sidebar h6 img{
     width: 20px;
@@ -45,6 +44,27 @@ body {
     margin-top: 20px;
     color: rgb(177, 172, 172) ;
     font-weight: 700;
+    cursor: pointer;
+}
+.sidebar h6.active{
+     border-left: 3px solid var(--spot-green);
+    color: turquoise;
+}
+.player {
+   display: flex;  
+}
+.side{
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-bottom: 100px;
+}
+#side{
+    cursor: pointer;
+}
+.items:hover{
+    color: #ffff;
 }
 /* cards section background */
 .mainsection {
@@ -113,5 +133,24 @@ body {
     padding-top: 5px;
     font-weight: 700;
     font-size: 0.75rem;
+}
+/* footer */
+#footer{
+    z-index: 2;
+     display: flex;
+     justify-content: center;
+    padding-top: 20px;
+      background-color: #383535;
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     height: 120px;
+     width: 100%;
+ }
+/*TEST*/
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
 }
 
