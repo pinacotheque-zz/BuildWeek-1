@@ -1,8 +1,15 @@
 :root {
     --spot-green: #1DB954; /* nb. official logo is a lighter green */
     --spot-black: rgb(25, 20, 20); /* for background */
-    --spot-blue: #3e5a9b; /* for button */
+    --spot-blue-grad: rgb(37, 69, 108);
+    --spot-transp: rgba(39,55,95,0.2); /* for gradient */
+    --spot-blue: rgb(39, 55, 95); /* for button */
 }
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+@font-face 
+    {font-family: "Circular Spotify Tx T Black"; src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot"); src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
+}
+
 /* Bootstrap Global settings: 
 "Use a native font stack that selects the best font-family for each OS and device.
 For a more inclusive and accessible type scale, we use the browser’s default root font-size (typically 16px) so visitors can customize their browser defaults as needed.
@@ -10,17 +17,18 @@ Use the $font-family-base, $font-size-base, and $line-height-base attributes as 
 Set the global link color via $link-color and apply link underlines only on :hover.
 Use $body-bg to set a background-color on the <body> (#fff by default)." 
 */
+
 body {
-    background-color: green; /*var(--spot-black);*/
-    font-family: 'Lato', sans-serif; /* Supposed to be the closest font to Spoitify Circular */
+    background-color: var(--spot-black);
     font-size: $font-size-base;
     line-height: $line-height-base;
 }
 *{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Circular Spotify Tx T Black', sans-serif;
     margin: 0;
     color: white;
 }
+/* sidenav - Gamze :) */
 .sidebar{
     width: 260px;
     height: 100%;
@@ -66,91 +74,107 @@ body {
 .items:hover{
     color: #ffff;
 }
-/* cards section background */
+/* cards section background - Sarah :)*/
 .mainsection {
-    padding: 2vh 50vw 2vh 0;
-    width: 60vw;
 }
 #home-cards { 
     background-color: var(--spot-blue);
     background: var(--spot-blue);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, var(--spot-blue), var(--spot-black));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--spot-blue), var(--spot-black)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(135deg, var(--spot-blue-grad), var(--spot-transp));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, var(--spot-blue-grad), var(--spot-transp)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/* cards section nav */
-#home-cards .topnav {
+/* I am really strugglign with this. We need to work together on responsiveness */
+@media (min-width: 777px) and (max-width: 799px) {
+    .mainsection {
+        left: 0;
+        transform: translateX(0);
+    }
+}
+@media (min-width: 800px) and (max-width: 991px) {
+    .mainsection {
+
+    }
+}
+@media (min-width: 991px) and (max-width: 1299px) {
+    .mainsection {
+        left: 15%;
+        transform: translateX(-24%);
+    }
+}
+@media (min-width: 1300px) {
+    .mainsection {
+        left: 25%;
+        transform: translateX(-35%);
+    }
+}
+.nav#topnav {
     position: relative;
     left: 50%;
-    transform: translateX(-25%);
+    transform: translateX(-50%);
     overflow: hidden;
     text-transform: uppercase;
-    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    font-size: 0.7em;
     font-weight: 700;
 }
-#home-cards .nav a {
+.nav#topnav a {
     color: #979faa;
     text-align: center;
     display: block;
     text-align: center;
-    padding: 1vh 1.2vw;
+    padding: 1vh 1vw;
     text-decoration: none;
 }
-#home-cards a.active::before { /* section nav green border */ 
+.nav#topnav a.active::before { /* section nav green border */ 
     content: "";
     opacity: 1;
     background-color: var(--spot-green);
     position: absolute;
     top: 4vh;
-    left: 2.5vw;
-    width: 2vw;
+    left: 5.5%;
+    width: 6%;
     height: 0.5vh;
 }
-#home-cards .nav a:hover, #home-cards .nav a.active {
+.nav#topnav a:hover, .nav#topnav a.active {
     color: white;
 }
 /* cards collections */
-.card-collection .allcaps { /* #THROWBACKTHURSDAY */
-    padding-left: 0;
-    color: white;
-    font-size: 3vw; /* !!not responsive */
-    font-weight: 700;
-    text-transform: uppercase;
+.card-collection {
+
 }
-.card-collection .genres { /* Classifiche */
-    padding-left: 0;
+.card-collection .allcaps, .card-collection .genres { /* #THROWBACKTHURSDAY and Classifiche*/
+    padding-left: 5px;
     color: white;
-    font-size: 3vw; /* !!not responsive */
+    font-size: 1.8em; 
     font-weight: 700;
+}
+.card-collection .allcaps {
+    text-transform: uppercase;
 }
 .card-collection .card {
     border: 0;
     background-color: rgba(0,0,0,0);
-    padding-left: 1vw;
-    padding-right: 1vw;
     text-align: center;
 }
 .card-collection p {
     padding-top: 5px;
     font-weight: 700;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+}
+#card-col {
+    min-width: 10vw;
 }
 /* footer */
 #footer{
-    z-index: 2;
-     display: flex;
-     justify-content: center;
-    padding-top: 20px;
-      background-color: #383535;
-     position: fixed;
-     left: 0;
-     bottom: 0;
-     height: 120px;
-     width: 100%;
- }
-/*TEST*/
-.wrapper {
+    z-index: 2;     
     display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: #383535;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
     width: 100%;
-    align-items: stretch;
-}
+ }
 
