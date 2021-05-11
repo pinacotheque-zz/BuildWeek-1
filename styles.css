@@ -11,8 +11,7 @@
 }
 body {
     background-color: var(--spot-black);
-    font-size: $font-size-base;
-    line-height: $line-height-base;
+    
 }
 *{
     font-family: 'Circular Spotify Tx T Black', sans-serif;
@@ -68,8 +67,7 @@ body {
 }
 /***********home cards section***********/
 /* cards can be reused! */
-.mainsection {
-}
+ 
 #home-cards { 
     background-color: var(--spot-blue);
     background: var(--spot-blue);  /* fallback for old browsers */
@@ -84,9 +82,7 @@ body {
     }
 }
 @media (min-width: 800px) and (max-width: 991px) {
-    .mainsection {
-
-    }
+    
 }
 @media (min-width: 991px) and (max-width: 1299px) {
     .mainsection {
@@ -131,9 +127,7 @@ body {
 .nav#topnav a:hover, .nav#topnav a.active {
     color: white;
 }
-.card-collection {
-
-}
+ 
 .card-collection .allcaps, .card-collection .genres { /* #THROWBACKTHURSDAY and Classifiche*/
     padding-left: 5px;
     color: white;
