@@ -92,8 +92,10 @@ body {
 .form-control:focus {
   border-color: var(--spot-green);
 }
-exampleCheck1 input[type="checkbox"]:checked + label::after {
-  color: #fff;
-  border-color: #007bff;
-  background-color: red !important;
+
+.custom-control-label:before {
+  background-color: transparent;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: var(--spot-green);
 }
