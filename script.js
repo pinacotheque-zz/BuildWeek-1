@@ -65,7 +65,7 @@ console.log(array[0].songs.length)
                 let tr = document.createElement('tr')
                 let table = document.querySelector('.tracklist table')
                 table.appendChild(tr)
-                tr.innerHTML = `<td class="musical-note"><i class="fas fa-music"></i></td><td class="song${i}-title"></td><td class="song${i}-duration mins"></td>`
+                tr.innerHTML = `<td class="musical-note"><i class="fas fa-music pb-4"></i></td><td class="song${i}-title"></td><td class="song${i}-duration mins"></td>`
                 document.querySelector(`.song${i}-title`).innerHTML = `<p>${album[i].title}<span>${array[0].artist}</span></p>`
                 document.querySelector(`.song${i}-duration`).innerHTML = `<p>${album[i].duration}</p>`  
                 console.log(`index${i}`)  

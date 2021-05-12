@@ -306,6 +306,39 @@ body {
   padding: 0;  
   font-size: 0.8rem;
 }
+.card-body h3 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.card-body p {
+  text-align: center;
+  color: #979faa;
+}
+.card-body div {
+  border: 2px solid red;
+}
+.card-body i {
+  padding-top: 10px;
+  color: #fff;
+}
+.year, .songs {
+  color: #979faa;
+}
+div.card-bottom {
+}
+.card-bottom {
+  max-width: 100px;
+}
+#btn-play {
+  background-color: var(--spot-green);
+  height: 30px;
+  width: 80px;
+  padding: 0 10px 0 10px;
+  margin: 0 0 20px 0;
+  border-radius: 30px;
+  font-size: x-small;
+  text-align: center;
+}
 .tracklist p  {
   font-weight: normal;
   font-size: 12px;
@@ -316,8 +349,21 @@ body {
   font-size: 12px;
   color: #979faa;
 }
+.tracklist i {
+  font-size: 0.8rem;
+}
 .tracklist i, .mins p {
   color: #979faa;
+}
+.tracklist table {
+  width: 45vw;
+}
+.tracklist table td {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.tracklist table td:hover {
+  opacity: 1;
 }
 /* **************** END OF ALBUM PAGE ********************** */
 
