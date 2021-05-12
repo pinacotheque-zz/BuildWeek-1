@@ -303,18 +303,19 @@ body {
 .jumbo-artist #btn-follow {
   /* background-color: var(--spot-black); */
   border-radius: 30px;
+  color: white;
   border: 1px solid rgb(82, 82, 82);
   padding-inline: 40px;
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 0.7455357142857143) 35%,
+    rgba(255, 255, 255, 0) 35%,
     rgba(7, 7, 7, 1) 100%
   );
 }
 .jumbo-artist #btn-follow:hover {
   background-color: var(--spot-black);
   border-color: var(--spot-black);
-  color: black;
+  color: rgba(255, 255, 255, 0.624);
 }
 #queen-card {
   background-image: url(/assets/albun_covers/queen_wp-3.jpeg);
@@ -334,6 +335,12 @@ body {
 
   position: fixed;
   width: 100%;
+}
+.jumbo-artist h5 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #ffffff87;
+  font-size: smaller;
 }
 /* **************** END OF ARTIST PAGE ********************** */
 
