@@ -9,6 +9,9 @@
 @font-face 
   {font-family: "Circular Spotify Tx T Black"; src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot"); src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff") format("woff"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black") format("svg");
 }
+
+@import url(/css/keyframes.css);
+
 body {
   background-color: var(--spot-black);  
 }
@@ -141,9 +144,40 @@ left: 50px;
 .nav#topnav a:hover, .nav#topnav a.active {
   color: white;
 } 
+/* animation properties added here!!! */
 .card-collection {
 margin-top: 10px;
+position: relative;
+transition: transform 0.4s linear;
 }
+.animationFrame {
+    
+    border: 3px solid rgb(117, 116, 116);
+    background: rgb(117, 116, 116);
+  
+   
+  }
+  
+.rent-badge {
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    font-size: 1.2em;
+  }
+  .rent-badge img{
+      width: 25px;
+      height: 25px;
+      
+    }
+    .cardForAnim{
+        position: relative;
+    }
+    .cardForAnim i{
+        width: 20px;
+        height: 20px;
+    }
+/* animation properties added here!!! */
+
 .card-collection .allcaps, .card-collection .genres { /* #THROWBACKTHURSDAY and Classifiche*/
   padding-left: 5px;
   color: white;
@@ -167,6 +201,7 @@ margin-top: 10px;
 #card-col {
   min-width: 10vw; /*12vw is the most accurate size to match screenshot, but it doesn't fit on one row on our page */
 }
+
 /* **************** END OF HOME CARDS ********************** */
 
 /* **************** LOGIN ********************** */
