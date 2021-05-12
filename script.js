@@ -37,7 +37,7 @@ let array = [
                 { // 15
                     "title" : `See What A Fool I've Been - B-side version, February 1974`,"duration" : `4:31`}
             ],
-            "cover" : `https://images-na.ssl-images-amazon.com/images/I/61QgeFWLvfL._AC_SL1200_.jpg`
+            "cover" : 'assets/albun_covers/queen-deluze.jpg'
         }
     ]
 
