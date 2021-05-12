@@ -311,6 +311,13 @@ bottom: 0;
 height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
 width: 100%;
 }
+.radiohead:hover{
+    text-decoration: underline;
+}
+.creep:hover{
+    text-decoration: underline;
+}
+
 .player{
 flex-wrap: nowrap;
 flex-direction: row;
