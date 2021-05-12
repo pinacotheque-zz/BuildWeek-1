@@ -4,6 +4,7 @@
   --spot-blue-grad: rgb(37, 69, 108);
   --spot-transp: rgba(39,55,95,0.2); /* for gradient */
   --spot-blue: rgb(39, 55, 95); /* for button */
+  --dark-gray: #241d1d; /* for album background */
 }
 @import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
 @font-face 
@@ -97,7 +98,7 @@ body {
 .items:hover{
   color: #fff;
 }
-/* **************** END OF ARTIST PAGE ********************** */
+/* **************** END OF SIDE NAV ********************** */
 
 /* **************** HOME CARDS ********************** */
 #home-cards { 
@@ -108,7 +109,7 @@ body {
   background: linear-gradient(90deg, var(--spot-blue-grad), var(--spot-black)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .mainsection {
-left: 50px;
+  left: 50px;
 }
 .nav#topnav {
   position: relative;
@@ -142,7 +143,7 @@ left: 50px;
   color: white;
 } 
 .card-collection {
-margin-top: 10px;
+  margin-top: 10px;
 }
 .card-collection .allcaps, .card-collection .genres { /* #THROWBACKTHURSDAY and Classifiche*/
   padding-left: 5px;
@@ -294,12 +295,38 @@ margin-top: 10px;
 }
 /* **************** END OF ARTIST PAGE ********************** */
 
+/* **************** ALBUM PAGE ********************** */
+#album-section {
+  background-color: var(--dark-gray);
+}
+.album-cover .card, .album-cover .card-body, .album-cover .card-text {
+  background-color: var(--dark-gray);
+  border: 0;
+  margin: 0;
+  padding: 0;  
+  font-size: 0.8rem;
+}
+.tracklist p  {
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.tracklist p span {
+  display: block;
+  font-size: 12px;
+  color: #979faa;
+}
+.tracklist i, .mins p {
+  color: #979faa;
+}
+/* **************** END OF ALBUM PAGE ********************** */
+
 /* **************** FOOTER MUSIC PLAYER ********************** */
 #footer-login, #footer-login > h6 { /* login page footer */
-font-size: xx-small;
+  font-size: xx-small;
 }
 .items:hover{
-color: #ffff;
+  color: #ffff;
 }
 #footer-home{ 
 z-index: 2;

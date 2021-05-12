@@ -49,14 +49,25 @@ console.log(array[0].cover) // https://images-na.ssl-images-amazon.com/images/I/
 console.log(array[0].songs.length)   
 
         const killerQueen = function() {
+            let cover = document.querySelector('img.card-img-top')
+            cover.setAttribute('src', `${array[0].cover}`)
+            let title = document.querySelector('.card-body h3')
+            title.innerText = array[0].album
+            let artist = document.querySelector('.card-body p')
+            artist.innerText = array[0].artist
+            let year = document.querySelector('.card-body .year')
+            year.innerText = array[0].released
+            let songs = document.querySelector('.card-body .songs')
+            songs.innerText = `${array[0].songs.length} songs`
+
             let album = array[0].songs
             for (let i=0; i<album.length; i++) {
                 let tr = document.createElement('tr')
                 let table = document.querySelector('.tracklist table')
                 table.appendChild(tr)
-                tr.innerHTML = `<td class="musical-note"><i class="fas fa-music"></i></td><td class="song${i}-title"></td><td class="song${i}-duration"></td>`
-                document.querySelector(`.song${i}-title`).innerText = album[i].title
-                document.querySelector(`.song${i}-duration`).innerText = album[i].duration   
+                tr.innerHTML = `<td class="musical-note"><i class="fas fa-music"></i></td><td class="song${i}-title"></td><td class="song${i}-duration mins"></td>`
+                document.querySelector(`.song${i}-title`).innerHTML = `<p>${album[i].title}<span>${array[0].artist}</span></p>`
+                document.querySelector(`.song${i}-duration`).innerHTML = `<p>${album[i].duration}</p>`  
                 console.log(`index${i}`)  
             }
             console.log("launching killerQueen()!")
