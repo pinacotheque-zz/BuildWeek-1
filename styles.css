@@ -52,11 +52,11 @@ body {
   text-decoration: none;
 }
 #tarkan{
- object-fit: cover;
- max-height: 40px;
- max-width: 40px;
- border-radius: 25px;
- margin-left: 25px;
+  object-fit: cover;
+  max-height: 40px;
+  max-width: 40px;
+  border-radius: 25px;
+  margin-left: 25px;
 }
 .sidebar a.active{ /* added a class of active to home so it looks exactly like the screenshot, in navbar, click makes link active */ 
   border-left: 4px solid var(--spot-green);
@@ -66,36 +66,36 @@ body {
   display: flex;     
 }
 @media screen and (max-width: 700px) {
-.sidebar {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-.sidebar a {
-  float: left;
-}
-div.content {
-    margin-left: 0;
-} /* THIS IS CAUSING THE ISSUE */
-} /* THIS IS CAUSING THE ISSUE */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+      margin-left: 0;
+  } 
+} 
 @media screen and (max-width: 400px) {
-.sidebar a {
-  text-align: center;
-  float: none;
-} /* THIS IS CAUSING THE ISSUE */
-} /* THIS IS CAUSING THE ISSUE */
+  .sidebar a {
+    text-align: center;
+    float: none;
+  } 
+} 
 .side {
-height:90vh;
-display:flex;
-flex-direction: column;
-justify-content:space-between;
-padding-bottom: 20px;
+  height:90vh;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding-bottom: 20px;
 }
 #side{
-cursor: pointer;
+  cursor: pointer;
 }
 .items:hover{
-color: #fff;
+  color: #fff;
 }
 /* **************** END OF ARTIST PAGE ********************** */
 
