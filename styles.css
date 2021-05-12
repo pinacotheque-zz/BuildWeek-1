@@ -17,8 +17,8 @@ body {
   margin: 0;
   color: white;
 }
-/***********home sidenav***********/
-/* sidenav can be reused! */
+
+/* **************** SIDE NAV ********************** */
 .sidebar{
   width: 230px; /*width: 260px;*/
   height: 100%;
@@ -97,8 +97,9 @@ cursor: pointer;
 .items:hover{
 color: #fff;
 }
-/***********home cards section***********/
-/* cards can be reused! */ 
+/* **************** END OF ARTIST PAGE ********************** */
+
+/* **************** HOME CARDS ********************** */
 #home-cards { 
   height: 97vh !important; /*important!*/
   background-color: var(--spot-blue);
@@ -166,7 +167,9 @@ margin-top: 10px;
 #card-col {
   min-width: 10vw; /*12vw is the most accurate size to match screenshot, but it doesn't fit on one row on our page */
 }
-/***********login page***********/
+/* **************** END OF HOME CARDS ********************** */
+
+/* **************** LOGIN ********************** */
 #main-container {
   background-color: white;
 }
@@ -254,7 +257,44 @@ margin-top: 10px;
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: var(--spot-green);
 }
-/***********footers***********/
+/* **************** END OF LOGIN ********************** */
+
+/* **************** ARTIST PAGE ********************** */
+.jumbo-artist {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.jumbo-artist #btn-play {
+  background-color: var(--spot-green);
+  border-radius: 30px;
+  padding-inline: 55px;
+}
+.jumbo-artist #btn-play:hover {
+  background-color: var(--spot-black);
+  border-color: var(--spot-black);
+  color: white;
+}
+.jumbo-artist #btn-follow {
+  /* background-color: var(--spot-black); */
+  border-radius: 30px;
+  border: 1px solid rgb(82, 82, 82);
+  padding-inline: 40px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.7455357142857143) 35%,
+    rgba(7, 7, 7, 1) 100%
+  );
+}
+.jumbo-artist #btn-follow:hover {
+  background-color: var(--spot-black);
+  border-color: var(--spot-black);
+  color: black;
+}
+/* **************** END OF ARTIST PAGE ********************** */
+
+/* **************** FOOTER MUSIC PLAYER ********************** */
 #footer-login, #footer-login > h6 { /* login page footer */
 font-size: xx-small;
 }
@@ -294,4 +334,5 @@ flex-direction: row;
   flex-direction: row;
   align-content: center;  
 }
-/* **************** ARTIST PAGE ********************** */
+/* **************** END OF FOOTER PLAYER ********************** */
+
