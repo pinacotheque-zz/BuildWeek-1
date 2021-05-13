@@ -342,7 +342,16 @@ body {
   color: #ffffff87;
   font-size: smaller;
 }
-
+#footer-artist {
+  z-index: 3;
+  padding-top: 10px; /*20px*/
+  background-color: #383535;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
+  width: 100%;
+}
 /* **************** END OF ARTIST PAGE ********************** */
 
 /* **************** FOOTER MUSIC PLAYER ********************** */
