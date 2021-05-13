@@ -1,5 +1,5 @@
 let array = [
-        { // 0 {Supposing more albums would eventually be added to the array}
+        { // 0 
             "artist" : `Queen`,
             "album" : `Queen II (Deluxe Edition 2011 Remaster)`,
             "released" : `1974`,
@@ -38,6 +38,43 @@ let array = [
                     "title" : `See What A Fool I've Been - B-side version, February 1974`,"duration" : `4:31`}
             ],
             "cover" : 'assets/albun_covers/queen-deluze.jpg'
+        },
+
+        { // 1
+            "artist" : `Various`,
+            "album" : `Karaoke Italiano`,
+            "released" : `2000`,
+            "songs" : [
+                { // 0
+                    "title" : `Se telefonando - Mina`,"duration" : `3:02`},
+                { // 1
+                    "title" : `Torna a casa - Måneskin`,"duration" : `3:51`},
+                { // 2
+                    "title" : `Don Raffaè - Fabrizio De André`,"duration" : `4.09`},
+                { // 3
+                    "title" : `Rimmel - Francesco De Gregori`,"duration" : `3:41`},
+                { // 4
+                    "title" : `La sera dei miracoli - Lucio Dalla`,"duration" : `5:16`},
+                { // 5
+                    "title" : `Almeno tu nell'universo - Mia Martini`,"duration" : `5:06`},
+                { // 6
+                    "title" : `L'isola che non c'è - Edoardo Bennato`,"duration" : `4:01`},
+                { // 7
+                    "title" : `La Cura - Franco Battiato`,"duration" : `4:03`},
+                { // 8
+                    "title" : `Tikibombom - Levante`,"duration" : `3:23`},
+                { // 9
+                    "title" : `Fai rumore - Diodato`,"duration" : `3:36`},
+                { // 10
+                    "title" : `Generale - Francesco De Gregori`,"duration" : `4:20`},
+                { // 11
+                    "title" : `Le cose in comune - Daniele Silvestri`,"duration" : `4:18`},
+                { // 12
+                    "title" : `Il Cielo D'Irlanda - Fiorella Mannoia`,"duration" : `4:14`},
+                { // 13
+                    "title" : `Piazza Grande - Lucio Dalla`,"duration" : `3:12`}
+            ],
+            "cover" : 'assets/albun_covers/karaokeitaliano.jfif'
         }
     ]
 
@@ -73,4 +110,27 @@ console.log(array[0].songs.length)
             console.log("launching killerQueen()!")
         }
 
-        killerQueen() /* :) */
+        const karaokeMachine = function() {
+            let cover = document.querySelector('img.card-img-top')
+            cover.setAttribute('src', `${array[1].cover}`)
+            let title = document.querySelector('.card-body h3')
+            title.innerText = array[1].album
+            let artist = document.querySelector('.card-body p')
+            artist.innerText = array[1].artist
+            let year = document.querySelector('.card-body .year')
+            year.innerText = array[1].released
+            let songs = document.querySelector('.card-body .songs')
+            songs.innerText = `${array[1].songs.length} songs`
+
+            let album = array[1].songs
+            for (let i=1; i<album.length; i++) {
+                let tr = document.createElement('tr')
+                let table = document.querySelector('.tracklist table')
+                table.appendChild(tr)
+                tr.innerHTML = `<td class="musical-note"><i class="fas fa-music pb-4"></i></td><td class="song${i}-title"></td><td class="song${i}-duration mins"></td>`
+                document.querySelector(`.song${i}-title`).innerHTML = `<p>${album[i].title}<span>${array[1].artist}</span></p>`
+                document.querySelector(`.song${i}-duration`).innerHTML = `<p>${album[i].duration}</p>`  
+                console.log(`index${i}`)  
+            }
+            console.log("karaokeMachine() engaged!")
+        }
