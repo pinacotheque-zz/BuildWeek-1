@@ -504,8 +504,7 @@ transition: transform 0.4s linear;
 .songs {
   color: #979faa;
 }
-.album-cover div.card-bottom {
-}
+
 .album-cover .card-bottom {
   max-width: 100px;
 }
