@@ -9,6 +9,18 @@ for (let i=0; i<elements.length ; i++){
 }
 
 
+// MOBILE SIDEBAR
+
+/* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("mobileNav").style.width = "100%";
+  }
+  
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("mobileNav").style.width = "0%";
+  }
+
 
 
 // let selectedCont = document.getElementById("side")
