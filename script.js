@@ -134,7 +134,7 @@ console.log(array[0].songs.length)
             let title = document.querySelector('.card-body h3')
             title.innerText = array[0].album
             let artist = document.querySelector('.card-body p')
-            artist.innerText = array[0].artist
+            artist.innerHTML= `<a href="artist.html">${array[0].artist}</a>`
             let year = document.querySelector('.card-body .year')
             year.innerText = array[0].released
             let songs = document.querySelector('.card-body .songs')
