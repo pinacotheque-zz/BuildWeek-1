@@ -1,31 +1,35 @@
 
 
-// let image = document.querySelectorAll(".card-col")
+let image = document.querySelectorAll(".card-col")
 let visible= document.querySelectorAll(".rent-badge")
 
-
-
-//     for (i=0; i<image.length; i++){
-//         image[i].addEventListener("mouseout",function yourFunc (){
-//             visible[i].style.display="none"      
-//     })
-// }
+for (i=0; i<image.length; i++){
+      image[i].addEventListener("mouseout",function yourFunc (){
+      visible[i].style.display="none"      
+    })
+ }
      
    
-// window.onload = (event) => {
-//     for (i=0; i<image.length; i++){
-//         visible[i].style.display="none"  }
-//     }
+ window.onload = () => {
+     for (i=0; i<image.length; i++){
+         visible[i].style.display="none"  }
+     }
 
-//     for (i=0; i<image.length; i++){
-//         image[i].addEventListener("mouseover",function myFunc (){
-//             visible[i].style.display="inline"      
-//     })
-// }
+     for (i=0; i<image.length; i++){
+         image[i].addEventListener("mouseover",function myFunc (){
+             visible[i].style.display="inline"      
+     })
+ }
 
-document.querySelectorAll(".cardForAnim").forEach(cardForAnim => 
-    cardForAnim.addEventListener("mouseover", () => document.querySelector(".rent-badge")[this].style.display("inline")
-    ))
+
+
+//short code here ****
+// document.querySelectorAll(".cardForAnim").forEach(cardForAnim => 
+//     cardForAnim.addEventListener("mouseover", () => document.querySelector(".rent-badge")[this].style.display("inline")
+//     ))
+
+//short code here ****
+
 
 // let elements = document.querySelectorAll(".items")
 

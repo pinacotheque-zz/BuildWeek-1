@@ -168,35 +168,34 @@ body {
   color: white;
 } 
 /* animation properties added here!!! */
-.card-collection {
-margin-top: 10px;
-position: relative;
-transition: transform 0.4s linear;
-}
+
 .animationFrame img{
-    opacity: 1;
+   
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
   }
-  .animationFrame img:hover{
-    background: rgb(181,178,178);
-    background: radial-gradient(circle, rgba(181,178,178,0.758140756302521) 36%, rgba(255,255,255,1) 100%);
-  }
+ 
   
 .rent-badge {
     position: absolute;
-    bottom: 45px;
+  visibility: hidden;
+    bottom: 50px;
     right: 2px;
     font-size: 1.2em;
   }
   .rent-badge img{
-      width: 28px;
-      height: 28px;
-
+      width: 29px;
+      height: 29px;
+      position: sticky;
+     
     }
+     #card-col:hover .rent-badge{
+      visibility: visible;   
+    }
+
     #card-col::before {
         /* This will be showing up together with the .movie-card-body content*/
         /* Therefore it will be transitioning together with it.*/
@@ -216,14 +215,10 @@ transition: transform 0.4s linear;
         );
       }
    
-    #card-col a{
-        display: none;
-    }
-     #card-col :hover{
-        background: rgb(66, 66, 66);
-       background-clip: border-box;
-        background-size: cover; 
-    }
+   
+  
+   
+
     .overlay{
         position: absolute;
         top: 0;
@@ -233,18 +228,14 @@ transition: transform 0.4s linear;
         height: 100%;
         width: 100%;
         opacity: 0;
-        transition: .5s ease;
+        transition: .1s ease;
         background-color: #5e5e5e;
     }
     .cardForAnim:hover .overlay {
         opacity: 30%;
       }
       
-    .cardForAnim{
-        position: relative;
-    }
-
-   
+  
 /* end of animation properties!!! */
 
 .card-collection .allcaps, .card-collection .genres { /* #THROWBACKTHURSDAY and Classifiche*/
