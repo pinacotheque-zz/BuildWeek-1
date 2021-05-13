@@ -117,8 +117,9 @@ body {
 
 /* **************** HOME CARDS ********************** */
 #home-cards {
-  height: 97vh !important; /*important!*/
+  height: 100% !important; /*important!*/
   background-color: var(--spot-blue);
+  background-size: auto;
   background: var(--spot-blue); /* fallback for old browsers */
   background: -webkit-linear-gradient(
     90deg,
