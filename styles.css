@@ -128,7 +128,7 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .mainsection {
-  left: 50px;
+  right: 2%;
 }
 .nav#topnav {
   position: relative;
@@ -317,20 +317,20 @@ body {
   border-color: var(--spot-black);
   color: rgba(255, 255, 255, 0.624);
 }
-#queen-card {
+#queen-wp {
   background-image: url(/assets/albun_covers/queen_wp-3.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
 }
 
-#queen-card::before {
+#queen-wp::before {
   content: " ";
-  height: 450px;
+  height: 650px;
   background: radial-gradient(
     at top,
     rgba(255, 255, 255, 0.25) 0%,
-    var(--spot-black) 60%
+    var(--spot-black) 45%
   );
 
   position: fixed;
@@ -342,6 +342,7 @@ body {
   color: #ffffff87;
   font-size: smaller;
 }
+
 /* **************** END OF ARTIST PAGE ********************** */
 
 /* **************** FOOTER MUSIC PLAYER ********************** */
