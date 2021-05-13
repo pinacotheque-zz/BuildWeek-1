@@ -326,11 +326,11 @@ body {
 
 #queen-wp::before {
   content: " ";
-  height: 650px;
+  height: 400px;
   background: radial-gradient(
     at top,
     rgba(255, 255, 255, 0.25) 0%,
-    var(--spot-black) 45%
+    var(--spot-black) 65%
   );
 
   position: fixed;
