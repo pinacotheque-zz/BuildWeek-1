@@ -21,6 +21,7 @@
     url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black")
       format("svg");
 }
+@import url(/css/keyframes.css);
 body {
   background-color: var(--spot-black);
 }
@@ -29,7 +30,6 @@ body {
   margin: 0;
   color: white;
 }
-
 /* **************** SIDE NAV ********************** */
 .sidebar {
   width: 230px; /*width: 260px;*/
@@ -164,9 +164,67 @@ body {
 .nav#topnav a.active {
   color: white;
 }
-.card-collection {
-  margin-top: 10px;
+
+/* animation properties added here!!! */
+
+.animationFrame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
+.rent-badge {
+  position: absolute;
+  visibility: hidden;
+  bottom: 50px;
+  right: 2px;
+  font-size: 1.2em;
+}
+.rent-badge img {
+  width: 29px;
+  height: 29px;
+  position: sticky;
+}
+#card-col:hover .rent-badge {
+  visibility: visible;
+}
+#card-col::before {
+  /* This will be showing up together with the .movie-card-body content*/
+  /* Therefore it will be transitioning together with it.*/
+  content: ""; /* to have a psuedo element display we need a content even if empty*/
+  /* same dimentions of the closest parent with a position value set (in this case, .movie-card-body itself*/
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -19%;
+  left: 10px;
+  /*linear-gradient is actually a background-image cssgradient.io*/
+  background: linear-gradient(
+    0deg,
+    rgba(var(--bg-tint), 1) 0%,
+    rgba(var(--bg-tint), 1) 19%,
+    rgba(var(--bg-tint), 0) 97%
+  );
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.1s ease;
+  background-color: #5e5e5e;
+}
+.cardForAnim:hover .overlay {
+  opacity: 30%;
+}
+
+/* end of animation properties!!! */
+
 .card-collection .allcaps,
 .card-collection .genres {
   /* #THROWBACKTHURSDAY and Classifiche*/
@@ -192,6 +250,7 @@ body {
 #card-col {
   min-width: 10vw; /*12vw is the most accurate size to match screenshot, but it doesn't fit on one row on our page */
 }
+
 /* **************** END OF HOME CARDS ********************** */
 
 /* **************** LOGIN ********************** */
@@ -324,16 +383,14 @@ body {
   background-repeat: no-repeat;
   height: 400px;
 }
-
 #queen-wp::before {
   content: " ";
   height: 400px;
   background: radial-gradient(
     at top,
     rgba(255, 255, 255, 0.25) 0%,
-    var(--spot-black) 65%
+    var(--spot-black) 50%
   );
-
   position: fixed;
   width: 100%;
 }
@@ -426,15 +483,15 @@ body {
 .songs {
   color: #979faa;
 }
-.album-cover div.card-bottom {
+.album-cover div.card-bottom { /*unsure which to keep*/
 }
-.album-cover .card-bottom {
+.album-cover .card-bottom { /*unsure which to keep*/
   max-width: 100px;
 }
 #btn-play-album {
   background-color: var(--spot-green);
   height: 30px;
-  width: 90px;
+  width: 80px;
   padding: 0 10px 0 10px;
   margin: 0 0 20px 0;
   border-radius: 30px;
@@ -475,6 +532,7 @@ body {
 #footer-login > h6 {
   /* login page footer */
   font-size: xx-small;
+  padding-top: 0;
 }
 .items:hover {
   color: #ffff;
@@ -488,6 +546,12 @@ body {
   bottom: 0;
   height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
   width: 100%;
+}
+.radiohead:hover {
+  text-decoration: underline;
+}
+.creep:hover {
+  text-decoration: underline;
 }
 .player {
   flex-wrap: nowrap;
