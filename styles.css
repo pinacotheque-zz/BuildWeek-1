@@ -429,8 +429,16 @@ flex-direction: row;
     font-size: 20px;
     color: #818181;
     display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    transition: 0.3s;
+    z-index: 3;
+     /* Transition effects on hover (color) */
   }
+
+  #navRule {
+    height: 20px !important;
+    width: auto !important;
+  }
+
 
   /* When you mouse over the navigation links, change their color */
   .mobileOverlay a:hover, .overlay a:focus {
@@ -460,4 +468,5 @@ flex-direction: row;
 @media screen and (min-width: 768px) {
   .mobileOverlay a {
     display: none;
+}
 }
