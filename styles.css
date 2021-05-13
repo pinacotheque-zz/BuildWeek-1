@@ -353,6 +353,44 @@ body {
   height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
   width: 100%;
 }
+#footer-artist img {
+  margin-left: 8px;
+  width: 60px;
+  height: 60px;
+}
+.nav#topnav {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.6em;
+  font-weight: 700;
+}
+.nav#nav-artist a {
+  color: #979faa;
+  text-align: center;
+  display: block;
+  text-align: center;
+  padding: 1vh 1vw;
+  text-decoration: none;
+}
+.nav#nav-artist a.active::before {
+  /* section nav green border */
+  content: "";
+  opacity: 1;
+  background-color: var(--spot-green);
+  position: absolute;
+  top: 5vh;
+  /* left: %; */
+  width: 85px;
+  height: 0.5vh;
+}
+.nav#nav-artist a:hover,
+.nav#nav-artist a.active {
+  color: white;
+}
 /* **************** END OF ARTIST PAGE ********************** */
 
 /* **************** ALBUM PAGE ********************** */
@@ -366,30 +404,30 @@ body {
   padding: 0;  
   font-size: 0.8rem;
 }
-.card-body h3 {
+.album-cover .card-body h3 {
   text-align: center;
   font-size: 1.3rem;
 }
-.card-body p {
+.album-cover .card-body p {
   text-align: center;
   color: #979faa;
 }
-.card-body div {
+.album-cover .card-body div {
   border: 2px solid red;
 }
-.card-body i {
+.album-cover .card-body i {
   padding-top: 10px;
   color: #fff;
 }
 .year, .songs {
   color: #979faa;
 }
-div.card-bottom {
+.album-cover div.card-bottom {
 }
-.card-bottom {
+.album-cover .card-bottom {
   max-width: 100px;
 }
-#btn-play {
+#btn-play-album {
   background-color: var(--spot-green);
   height: 30px;
   width: 80px;
