@@ -74,6 +74,49 @@ let array = [
                 { // 13
                     "title" : `Piazza Grande - Lucio Dalla`,"duration" : `3:12`}
             ],
+            "cover" : 'assets/albun_covers/liricisti.jfif'
+        },
+
+        { // 2
+            "artist" : `Various`,
+            "album" : `Liricisti`,
+            "released" : `1995`,
+            "songs" : [
+                { // 0
+                    "title" : `BODY PARTS - Marracash`,"duration" : `2:37`},
+                { // 1
+                    "title" : `Lifestyle - Guè Pequeno, Dj Harsh`,"duration" : `2:10`},
+                { // 2
+                    "title" : `BUONANOTTE - MACE, Noyz Narcos`,"duration" : `3:29`},
+                { // 3
+                    "title" : `FANTASMI - TY1, Geolier, Marracash`,"duration" : `3:19`},
+                { // 4
+                    "title" : `LA PROSSIMA VOLTA - Gemitaiz, Carl Brave`,"duration" : `2:29`},
+                { // 5
+                    "title" : `BUGIE - Massimo Pericola, Crookers`,"duration" : `3:49`},
+                { // 6
+                    "title" : `Smith & Wesson Freestyle - Guè Pequeno, Dj Harsh`,"duration" : `2:10`},
+                { // 7
+                    "title" : `Chic - Izi`,"duration" : `3:33`},
+                { // 8
+                    "title" : `S.A.L.M.O. - Salmo`,"duration" : `3:56`},
+                { // 9
+                    "title" : `Re Mida - Lazza`,"duration" : `2:29`},
+                { // 10
+                    "title" : `Amici - Massimo Pericola, Crookers`,"duration" : `3:01`},
+                { // 11
+                    "title" : `DJUNGLE - TY1, Taxi B, Paky, Marracash`,"duration" : `2:41`},
+                { // 12
+                    "title" : `Angelina Jolie - Brash`,"duration" : `2:50`},
+                { // 13
+                    "title" : `Italian Hustler (feat. Rasty Kilo) - Guè Pequeno, Dj Harsh`,"duration" : `2:43`},
+                { // 13
+                    "title" : `APPARTENGO - Marracash, Massimo Pericola`,"duration" : `4:15`},
+                { // 13
+                    "title" : `L'Alba - Salmo`,"duration" : `2:57`},
+                { // 13
+                    "title" : `Marte (feat. Izi) - Madame, Guè Pequeno`,"duration" : `2:16`}
+            ],
             "cover" : 'assets/albun_covers/karaokeitaliano.jfif'
         }
     ]
@@ -133,4 +176,29 @@ console.log(array[0].songs.length)
                 console.log(`index${i}`)  
             }
             console.log("karaokeMachine() engaged!")
+        }
+
+        const liricisti = function() {
+            let cover = document.querySelector('img.card-img-top')
+            cover.setAttribute('src', `${array[2].cover}`)
+            let title = document.querySelector('.card-body h3')
+            title.innerText = array[2].album
+            let artist = document.querySelector('.card-body p')
+            artist.innerText = array[2].artist
+            let year = document.querySelector('.card-body .year')
+            year.innerText = array[2].released
+            let songs = document.querySelector('.card-body .songs')
+            songs.innerText = `${array[2].songs.length} songs`
+
+            let album = array[2].songs
+            for (let i=2; i<album.length; i++) {
+                let tr = document.createElement('tr')
+                let table = document.querySelector('.tracklist table')
+                table.appendChild(tr)
+                tr.innerHTML = `<td class="musical-note"><i class="fas fa-music pb-4"></i></td><td class="song${i}-title"></td><td class="song${i}-duration mins"></td>`
+                document.querySelector(`.song${i}-title`).innerHTML = `<p>${album[i].title}<span>${array[2].artist}</span></p>`
+                document.querySelector(`.song${i}-duration`).innerHTML = `<p>${album[i].duration}</p>`  
+                console.log(`index${i}`)  
+            }
+            console.log("sing liricisti() sing!")
         }
