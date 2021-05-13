@@ -402,6 +402,33 @@ body {
   color: #ffffff87;
   font-size: smaller;
 }
+.artist-cards {
+  margin-top: 40vh;
+  width: 70vw;
+}
+.artist-cards .genres {
+  padding-left: 5px;
+  color: white;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+.artist-cards .card {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+.artist-cards p {
+  color: white;
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.artist-cards p span {
+  color: #979faa;
+}
+#card-col {
+  min-width: 11vw; /*12vw is the most accurate size to match screenshot, but it doesn't fit on one row on our page */
+}
 #footer-artist {
   z-index: 3;
   padding-top: 10px; /*20px*/
@@ -417,7 +444,7 @@ body {
   width: 60px;
   height: 60px;
 }
-.nav#topnav {
+.nav#navartist {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -427,7 +454,7 @@ body {
   font-size: 0.6em;
   font-weight: 700;
 }
-.nav#nav-artist a {
+.nav#navartist a {
   color: #979faa;
   text-align: center;
   display: block;
@@ -435,21 +462,50 @@ body {
   padding: 1vh 1vw;
   text-decoration: none;
 }
-.nav#nav-artist a.active::before {
+.nav#navartist a.active::before {
   /* section nav green border */
   content: "";
   opacity: 1;
   background-color: var(--spot-green);
   position: absolute;
-  top: 5vh;
-  /* left: %; */
-  width: 85px;
+  top: 3vh;
+  left: 9%;
+  width: 12%;
   height: 0.5vh;
 }
-.nav#nav-artist a:hover,
-.nav#nav-artist a.active {
+.nav#navartist a:hover,
+.nav#navartist a.active {
   color: white;
 }
+.artist-anim .rent-badge {
+  position: absolute;
+  visibility: hidden;
+  top: 125px;
+  right: 2px;
+  font-size: 1.2em;
+}
+.artist-anim::before {
+  /* This will be showing up together with the .movie-card-body content*/
+  /* Therefore it will be transitioning together with it.*/
+  content: ""; /* to have a psuedo element display we need a content even if empty*/
+  /* same dimentions of the closest parent with a position value set (in this case, .movie-card-body itself*/
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -19%;
+  left: 10px;
+  /*linear-gradient is actually a background-image cssgradient.io*/
+  background: linear-gradient(
+    0deg,
+    rgba(var(--bg-tint), 1) 0%,
+    rgba(var(--bg-tint), 1) 19%,
+    rgba(var(--bg-tint), 0) 97%
+  );
+}
+.artist-anim:hover .overlay {
+  opacity: 30%;
+}
+
 /* **************** END OF ARTIST PAGE ********************** */
 
 /* **************** ALBUM PAGE ********************** */
