@@ -166,7 +166,7 @@ body {
 .nav#topnav a:hover,
 .nav#topnav a.active {
   color: white;
-} 
+}
 /* animation properties added here!!! */
 
 .animationFrame img{
@@ -238,7 +238,9 @@ body {
   
 /* end of animation properties!!! */
 
-.card-collection .allcaps, .card-collection .genres { /* #THROWBACKTHURSDAY and Classifiche*/
+.card-collection .allcaps,
+.card-collection .genres {
+  /* #THROWBACKTHURSDAY and Classifiche*/
   padding-left: 5px;
   color: white;
   font-size: 1.7em;
@@ -539,34 +541,37 @@ body {
 /* **************** END OF ALBUM PAGE ********************** */
 
 /* **************** FOOTER MUSIC PLAYER ********************** */
-#footer-login, #footer-login > h6 { /* login page footer */
-font-size: xx-small;
+#footer-login,
+#footer-login > h6 {
+  /* login page footer */
+  font-size: xx-small;
+  padding-top: 0;
 }
-.items:hover{
-color: #ffff;
+.items:hover {
+  color: #ffff;
 }
-#footer-home{ 
-z-index: 2;
-padding-top: 10px; /*20px*/
-background-color: #383535;
-position: fixed;
-left:0;
-bottom: 0;
-height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
-width: 100%;
+#footer-home {
+  z-index: 2;
+  padding-top: 10px; /*20px*/
+  background-color: #383535;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
+  width: 100%;
 }
-.radiohead:hover{
-    text-decoration: underline;
+.radiohead:hover {
+  text-decoration: underline;
 }
-.creep:hover{
-    text-decoration: underline;
+.creep:hover {
+  text-decoration: underline;
 }
 
-.player{
-flex-wrap: nowrap;
-flex-direction: row;
+.player {
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
-#nowPlaying{
+#nowPlaying {
   align-self: center;
   padding-bottom: 50px;
   align-content: center;
