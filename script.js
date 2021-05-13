@@ -74,7 +74,7 @@ let array = [
                 { // 13
                     "title" : `Piazza Grande - Lucio Dalla`,"duration" : `3:12`}
             ],
-            "cover" : 'assets/albun_covers/liricisti.jfif'
+            "cover" : 'assets/albun_covers/karaokeitaliano.jfif'
         },
 
         { // 2
@@ -117,7 +117,7 @@ let array = [
                 { // 13
                     "title" : `Marte (feat. Izi) - Madame, Guè Pequeno`,"duration" : `2:16`}
             ],
-            "cover" : 'assets/albun_covers/karaokeitaliano.jfif'
+            "cover" : 'assets/albun_covers/liricisti.jfif'
         }
     ]
 
