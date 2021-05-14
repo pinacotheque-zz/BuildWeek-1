@@ -347,6 +347,10 @@ flex-direction: row;
   display: none;
 }
 
+.mobFooter {
+  display: none;
+}
+
 @media screen and (max-width: 769px) {
   /* DISPLAY FOR CURRENT ELEMENTS */
   .sidebar {
@@ -404,11 +408,15 @@ flex-direction: row;
     display: block;
   }
 
-  .jumbotron {
+  .jumboMob {
     background-image: url("./spot-mobile-image.png");
     background-size: cover;
     height: 100vh;
     width: 60vw;
+  }
+
+  .mobFooter {
+    display: block;
   }
 }
 
@@ -507,6 +515,8 @@ flex-direction: row;
   .getSpot{
     color: rgb(43, 86, 204);
   }
+
+  .titleMob {}
 
 }
 
