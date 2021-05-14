@@ -1,0 +1,890 @@
+:root {
+  --spot-green: #1db954; /* nb. official logo is a lighter green */
+  --spot-black: rgb(25, 20, 20); /* for background */
+  --spot-blue-grad: rgb(37, 69, 108);
+  --spot-transp: rgba(39, 55, 95, 0.2); /* for gradient */
+  --spot-blue: rgb(39, 55, 95); /* for button */
+  --dark-gray: #241d1d; /* for album background */
+}
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+@font-face {
+  font-family: "Circular Spotify Tx T Black";
+  src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot");
+  src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#Circular Spotify Tx T Black")
+      format("svg");
+}
+@import url(/css/keyframes.css);
+body {
+  background-color: var(--spot-black);
+}
+* {
+  font-family: "Circular Spotify Tx T Black", sans-serif;
+  margin: 0;
+  color: white;
+}
+/* **************** SIDE NAV ********************** */
+.sidebar {
+  width: 180px; /*width: 260px;*/
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  padding-top: 20px;
+  z-index: 1;
+  left: 0;
+  padding-left: 0;
+  margin: 0;
+}
+#logo {
+  margin-left: 12px !important;
+  justify-content: center;
+  display: flex;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  width: 120px; /*150px*/
+  image-rendering: optimizeQuality;
+  color: rgb(177, 172, 172);
+}
+.sidebar a {
+  display: block;
+  padding-left: 10px; /*18px*/
+  margin-left: 0;
+  margin-top: 10px;
+  color: rgb(177, 172, 172);
+  font-size: 0.7em; /* added  16:21 11/5/21*/
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+#tarkan {
+  object-fit: cover;
+  max-height: 40px;
+  max-width: 40px;
+  border-radius: 25px;
+  margin-left: 25px;
+}
+.sidebar a.active {
+  /* added a class of active to home so it looks exactly like the screenshot, in navbar, click makes link active */
+  border-left: 4px solid var(--spot-green);
+  color: #fff;
+}
+.player {
+  display: flex;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.side {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#side {
+  cursor: pointer;
+}
+.items:hover {
+  color: #fff;
+}
+/* **************** END OF SIDE NAV ********************** */
+
+/* **************** HOME CARDS ********************** */
+#home-cards {
+  height: 100% !important; /*was 97vh i don't remember why*/
+  background-color: var(--spot-blue);
+  background-size: auto;
+  background: var(--spot-blue); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    90deg,
+    var(--spot-blue-grad),
+    var(--spot-black)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    90deg,
+    var(--spot-blue-grad),
+    var(--spot-black)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mainsection {
+  right: 2%;
+}
+.nav#topnav {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.6em;
+  font-weight: 700;
+}
+.nav#topnav a {
+  color: #979faa;
+  text-align: center;
+  display: block;
+  text-align: center;
+  padding: 1vh 1vw;
+  text-decoration: none;
+}
+.nav#topnav a.active::before {
+  /* section nav green border */
+  content: "";
+  opacity: 1;
+  background-color: var(--spot-green);
+  position: absolute;
+  top: 3vh;
+  left: 5.5%;
+  width: 6%;
+  height: 0.5vh;
+}
+.nav#topnav a:hover,
+.nav#topnav a.active {
+  color: white;
+}
+
+/* animation properties added here!!! */
+
+.animationFrame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.rent-badge {
+  position: absolute;
+  visibility: hidden;
+  bottom: 50px;
+  right: 2px;
+  font-size: 1.2em;
+}
+.rent-badge img {
+  width: 29px;
+  height: 29px;
+  position: sticky;
+}
+#card-col:hover .rent-badge {
+  visibility: visible;
+}
+#card-col::before {
+  /* This will be showing up together with the .movie-card-body content*/
+  /* Therefore it will be transitioning together with it.*/
+  content: ""; /* to have a psuedo element display we need a content even if empty*/
+  /* same dimentions of the closest parent with a position value set (in this case, .movie-card-body itself*/
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -19%;
+  left: 10px;
+  /*linear-gradient is actually a background-image cssgradient.io*/
+  background: linear-gradient(
+    0deg,
+    rgba(var(--bg-tint), 1) 0%,
+    rgba(var(--bg-tint), 1) 19%,
+    rgba(var(--bg-tint), 0) 97%
+  );
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.1s ease;
+  background-color: #5e5e5e;
+}
+.cardForAnim:hover .overlay {
+  opacity: 30%;
+}
+
+/* end of animation properties!!! */
+
+.card-collection {
+  width: 70vw;
+}
+.card-collection .allcaps,
+.card-collection .genres {
+  /* #THROWBACKTHURSDAY and Classifiche*/
+  padding-left: 5px;
+  color: white;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+.card-collection .allcaps {
+  text-transform: uppercase;
+}
+.card-collection .card {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+.card-collection p {
+  color: #979faa;
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+#card-col {
+  min-width: 11vw; /*12vw is the most accurate size to match screenshot, but it doesn't fit on one row on our page */
+}
+/* **************** END OF HOME CARDS ********************** */
+
+/* **************** LOGIN ********************** */
+#main-container {
+  background-color: white;
+}
+.text-center {
+  text-align: center;
+}
+/* #main-container {
+  width: fit-content;
+} */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+/* form {
+  display: block;
+} */
+#btn-fb {
+  background-color: var(--spot-blue);
+  border-radius: 30px;
+  font-size: small;
+}
+#btn-apple {
+  background-color: var(--spot-black);
+  border-radius: 30px;
+  font-size: small;
+}
+#btn-signup {
+  border-radius: 30px;
+  font-size: small;
+  font-weight: bolder;
+}
+#btn-login {
+  background-color: var(--spot-green);
+  border-radius: 30px;
+  font-size: x-small;
+  padding-inline: 40px;
+}
+.small-txt {
+  font-size: small;
+}
+.hr-or {
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+}
+.x-small-txt {
+  font-size: x-small;
+}
+#p-forgot a {
+  color: var(--spot-green);
+  font-size: small;
+}
+#p-forgot a:hover {
+  font-weight: bolder;
+}
+.a-terms {
+  color: var(--spot-green);
+}
+.a-terms:hover {
+  color: var(--spot-green);
+  font-weight: bolder;
+}
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.show > .btn-outline-dark.dropdown-toggle {
+  color: #fff;
+  background-color: var(--spot-green);
+  /* border-color: var(--spot-green); */
+}
+#btn-signup:hover {
+  background-color: var(--spot-black);
+  border-color: var(--spot-black);
+  color: white;
+}
+.btn-outline-dark:not(:disabled):not(.disabled):active {
+  border-color: var(--spot-green);
+}
+.form-control:focus {
+  border-color: var(--spot-green);
+}
+.custom-control-label:before {
+  background-color: transparent;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: var(--spot-green);
+}
+/* **************** END OF LOGIN ********************** */
+
+/* **************** ARTIST PAGE ********************** */
+.jumbo-artist {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.jumbo-artist #btn-play {
+  background-color: var(--spot-green);
+  border-radius: 30px;
+  padding-inline: 55px;
+}
+.jumbo-artist #btn-play:hover {
+  background-color: var(--spot-black);
+  border-color: var(--spot-black);
+  color: white;
+}
+.jumbo-artist #btn-follow {
+  /* background-color: var(--spot-black); */
+  border-radius: 30px;
+  color: white;
+  border: 1px solid rgb(82, 82, 82);
+  padding-inline: 40px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(7, 7, 7, 1) 100%
+  );
+}
+.jumbo-artist #btn-follow:hover {
+  background-color: var(--spot-black);
+  border-color: var(--spot-black);
+  color: rgba(255, 255, 255, 0.624);
+}
+#queen-wp {
+  background-image: url(/assets/albun_covers/queen_wp-3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+#queen-wp::before {
+  content: " ";
+  height: 400px;
+  background: radial-gradient(
+    at top,
+    rgba(255, 255, 255, 0.25) 0%,
+    var(--spot-black) 50%
+  );
+  position: fixed;
+  width: 100%;
+}
+.jumbo-artist h5 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #ffffff87;
+  font-size: smaller;
+}
+.artist-cards {
+  margin-top: 40vh;
+  width: 70vw;
+}
+.artist-cards .genres {
+  padding-left: 5px;
+  color: white;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+.artist-cards .card {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+.artist-cards p {
+  color: white;
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.artist-cards p span {
+  color: #979faa;
+}
+#card-col {
+  min-width: 11vw; /*12vw is the most accurate size to match screenshot, but it doesn't fit on one row on our page */
+}
+#footer-artist {
+  z-index: 3;
+  padding-top: 10px; /*20px*/
+  background-color: #383535;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
+  width: 100%;
+}
+#footer-artist img {
+  margin-left: 8px;
+  width: 60px;
+  height: 60px;
+}
+.nav#navartist {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.6em;
+  font-weight: 700;
+}
+.nav#navartist a {
+  color: #979faa;
+  text-align: center;
+  display: block;
+  text-align: center;
+  padding: 1vh 1vw;
+  text-decoration: none;
+}
+.nav#navartist a.active::before {
+  /* section nav green border */
+  content: "";
+  opacity: 1;
+  background-color: var(--spot-green);
+  position: absolute;
+  top: 3vh;
+  left: 9%;
+  width: 12%;
+  height: 0.5vh;
+}
+.nav#navartist a:hover,
+.nav#navartist a.active {
+  color: white;
+}
+.artist-anim .rent-badge {
+  position: absolute;
+  visibility: hidden;
+  top: 100px;
+  right: 2px;
+  font-size: 1.2em;
+}
+.artist-anim::before {
+  /* This will be showing up together with the .movie-card-body content*/
+  /* Therefore it will be transitioning together with it.*/
+  content: ""; /* to have a psuedo element display we need a content even if empty*/
+  /* same dimentions of the closest parent with a position value set (in this case, .movie-card-body itself*/
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: -19%;
+  left: 10px;
+  /*linear-gradient is actually a background-image cssgradient.io*/
+  background: linear-gradient(
+    0deg,
+    rgba(var(--bg-tint), 1) 0%,
+    rgba(var(--bg-tint), 1) 19%,
+    rgba(var(--bg-tint), 0) 97%
+  );
+}
+.artist-anim:hover .overlay {
+  opacity: 30%;
+}
+
+/* **************** END OF ARTIST PAGE ********************** */
+
+/* **************** ALBUM PAGE ********************** */
+#album-section {
+  background-color: #111111;
+}
+.album-cover .card,
+.album-cover .card-body,
+.album-cover .card-text {
+  background-color: #111111;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+.album-cover .card-body h3 {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+}
+.album-cover .card-body p,
+.album-cover .card-body a {
+  text-align: center;
+  color: #979faa;
+}
+.album-cover .card-body a:hover {
+  color: white;
+}
+.album-cover .card-body i {
+  padding-top: 10px;
+  color: #fff;
+}
+.year,
+.songs {
+  color: #979faa;
+}
+
+.album-cover .card-bottom {
+  /*unsure which to keep*/
+  max-width: 100px;
+}
+#btn-play-album {
+  background-color: var(--spot-green);
+  height: 30px;
+  width: 90px;
+  padding: 0 10px 0 10px;
+  margin: 0 0 20px 0;
+  border-radius: 30px;
+  font-size: x-small;
+  text-align: center;
+}
+.tracklist p {
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.tracklist p span {
+  display: block;
+  font-size: 12px;
+  color: #979faa;
+}
+.tracklist i {
+  font-size: 0.8rem;
+}
+.tracklist i,
+.mins p {
+  color: #979faa;
+}
+.tracklist table {
+  width: 45vw;
+}
+.tracklist table td {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.tracklist table td:hover {
+  opacity: 1;
+}
+.album-cover .card-body i {
+  color: white;
+}
+.album-cover .card-body i:hover {
+  color: var(--spot-green);
+}
+/* **************** END OF ALBUM PAGE ********************** */
+
+/* **************** FOOTER MUSIC PLAYER ********************** */
+#footer-login,
+#footer-login > h6 {
+  /* login page footer */
+  font-size: xx-small;
+  padding-top: 0;
+}
+.items:hover {
+  color: #ffff;
+}
+#footer-home {
+  z-index: 2;
+  padding-top: 10px; /*20px*/
+  background-color: #383535;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
+  width: 100%;
+}
+.radiohead:hover {
+  text-decoration: underline;
+}
+.creep:hover {
+  text-decoration: underline;
+}
+.player {
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+#nowPlaying {
+  align-self: center;
+  padding-bottom: 50px;
+  align-content: center;
+}
+#footer-home img {
+  margin-left: 8px;
+  width: 60px;
+  height: 60px;
+}
+.row .process {
+  align-items: center;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+.songDur {
+  flex-direction: row;
+  align-content: center;
+}
+/* **************** END OF FOOTER PLAYER ********************** */
+
+/* RESPONSIVE SIDE BAR */
+.mobileNav {
+  display: none;
+}
+
+#mobcont {
+  display: none;
+}
+
+.mobFooter {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  /* DISPLAY FOR CURRENT ELEMENTS */
+  .sidebar {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+  }
+  #logo {
+    float: left;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 40px;
+    width: auto;
+  }
+  .sidebar a.items {
+    display: none !important; /* Our code may have changed */
+  }
+
+  .sidebar hr {
+    display: none; /* Our code may have changed */
+  }
+
+  footer {
+    /* Our code may have changed */
+    display: none !important;
+    z-index: 0 !important;
+  }
+
+  .btn-signup {
+    display: none !important;
+  }
+
+  .mainsection {
+    display: none !important;
+  }
+
+  /* #home-cards {
+    background-color: black !important;
+  } */
+
+  /* PERFECT IF WE HAVE TIME */
+
+  .album-cover {
+    display: none !important;
+  }
+
+  #tarkan {
+    /* Our code may have changed, change accordingly*/
+    display: none !important;
+  }
+
+  #tarkantext {
+    /* Our code may have changed, change accordingly*/
+    display: none !important;
+  }
+
+  #divIndiv {
+    /* Our code may have changed - this is the row that used to have Tarkan */
+    display: none;
+  }
+
+  #navBarOpen {
+    height: 20px;
+    width: auto;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  .mobileNav {
+    display: block;
+  }
+
+  #mobcont {
+    display: block;
+  }
+
+  .jumboMob {
+    background-image: url("./spot-mobile-image.png");
+    background-size: cover;
+    height: 100vh;
+    width: 60vw;
+  }
+
+  .mobFooter {
+    display: block;
+  }
+}
+
+/* @media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} */
+/* SIDEBAR MENU */
+@media screen and (max-width: 769px) {
+  .mobileOverlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: -0;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0); /* Black fallback color */
+    background-color: rgba(0, 0, 0); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 4%; /* 25% from the top */
+    width: 100%; /* 100% width */
+
+    text-align: left; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .mobileOverlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;
+    z-index: 3;
+    /* Transition effects on hover (color) */
+  }
+
+  #navRule {
+    height: 20px !important;
+    width: auto !important;
+    color: white !important;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .mt-0:hover {
+    color: var(--spot-green) !important;
+  }
+
+  #closebtnshak {
+    height: 20px;
+    width: auto;
+  }
+
+  /* Position the close button (top right corner) */
+  .mobileOverlay .closebtn {
+    position: absolute;
+    z-index: 4;
+    top: 1%;
+    right: 3%;
+    font-size: 30px;
+  }
+
+  .display-4 {
+    position: relative;
+    color: var(--spot-green);
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 30vh;
+  }
+
+  .secondheadingmob {
+    position: relative;
+    color: var(--spot-green);
+    font-size: 15px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    margin-top: 2vh;
+    margin-right: 25vw;
+    margin-left: 25vw;
+    justify-content: space-around;
+  }
+
+  .getSpot {
+    color: rgb(43, 86, 204);
+  }
+
+  .titleMob {
+    color: gray;
+    font: bolder;
+    font-size: 10px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    margin-top: 30px;
+  }
+
+  .contMob {
+    font-size: 14px;
+  }
+
+  .socialBut {
+    width: 50px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius: 25px;
+    font-size: 8px;
+    text-align: center;
+  }
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .mobileOverlay a {
+    font-size: 20px;
+  }
+  .mobileOverlay .closebtn {
+    font-size: 40px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobileOverlay a {
+    display: none;
+  }
+}
