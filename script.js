@@ -307,7 +307,7 @@ const karaokeMachine = function () {
   let title = document.querySelector(".card-body h3");
   title.innerText = array[1].album;
   let artist = document.querySelector(".card-body p");
-  artist.innerText = array[1].artist;
+  artist.innerHTML = `<a href="#">${array[1].artist}</a>`;
   let year = document.querySelector(".card-body .year");
   year.innerText = array[1].released;
   let songs = document.querySelector(".card-body .songs");
