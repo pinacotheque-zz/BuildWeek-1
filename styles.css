@@ -643,3 +643,238 @@ body {
   align-content: center;
 }
 /* **************** END OF FOOTER PLAYER ********************** */
+
+/* RESPONSIVE SIDE BAR */
+.mobileNav {
+  display: none;
+}
+
+#mobcont {
+  display: none;
+}
+
+.mobFooter {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  /* DISPLAY FOR CURRENT ELEMENTS */
+  .sidebar {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+    
+  }
+  #logo {
+    float: left;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 40px;
+    width: auto;
+  }
+  .sidebar a.items {
+    display: none !important; /* Our code may have changed */
+  }
+
+  .sidebar hr {
+    display: none;  /* Our code may have changed */
+  } 
+
+  footer {  /* Our code may have changed */
+    display: none !important;
+    z-index: 0 !important;
+  }
+
+  .btn-signup {
+    display: none !important;
+  }
+
+  .mainsection {
+    display: none !important;
+  }
+
+  /* #home-cards {
+    background-color: black !important;
+  } */
+
+  /* PERFECT IF WE HAVE TIME */
+
+  #tarkan {  /* Our code may have changed, change accordingly*/
+    display: none !important;
+  }
+
+  #divIndiv{  /* Our code may have changed - this is the row that used to have Tarkan */
+    display: none;
+  }
+
+  #navBarOpen {
+    height: 20px;
+    width: auto;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  .mobileNav{
+    display: block;
+  }
+
+  #mobcont {
+    display: block;
+  }
+
+  .jumboMob {
+    background-image: url("./spot-mobile-image.png");
+    background-size: cover;
+    height: 100vh;
+    width: 60vw;
+  }
+
+  .mobFooter {
+    display: block;
+  }
+}
+
+/* @media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} */
+/* SIDEBAR MENU */
+@media screen and (max-width: 769px) {
+  .mobileOverlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: -0;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0, 0, 0); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+   /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 4%; /* 25% from the top */
+    width: 100%; /* 100% width */
+
+    text-align: left; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .mobileOverlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;
+    z-index: 3;
+     /* Transition effects on hover (color) */
+  }
+
+  #navRule {
+    height: 20px !important;
+    width: auto !important;
+    color: white !important;
+  }
+
+
+  /* When you mouse over the navigation links, change their color */
+  .mt-0:hover {
+    color: var(--spot-green) !important;
+  }
+
+  #closebtnshak {
+    height: 20px;
+    width: auto;
+  }
+
+  /* Position the close button (top right corner) */
+  .mobileOverlay .closebtn {
+    position: absolute;
+    z-index: 4;
+    top: 1%;
+    right: 3%;
+    font-size: 30px;
+  }
+
+  .display-4{
+    position: relative;
+    color: var(--spot-green);
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 30vh;
+  }
+
+  .secondheadingmob {
+    position: relative;
+    color: var(--spot-green);
+    font-size: 15px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    margin-top: 2vh;
+    margin-right: 25vw;
+    margin-left: 25vw;
+    justify-content: space-around;
+
+  }
+
+  .getSpot{
+    color: rgb(43, 86, 204);
+  }
+
+  .titleMob {
+    color: gray;
+    font: bolder;
+    font-size: 10px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    margin-top: 30px;
+  }
+
+  .contMob {
+    font-size: 14px;
+  }
+
+  .socialBut {
+    width: 50px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius: 25px;
+    font-size: 8px;
+    text-align: center;
+  }
+  
+
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .mobileOverlay a {font-size: 20px}
+  .mobileOverlay .closebtn {
+    font-size: 40px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobileOverlay a {
+    display: none;
+}
+}
