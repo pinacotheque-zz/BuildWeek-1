@@ -38,6 +38,95 @@
       <div id="queen-wp" class="row">
         <!--MAIN CONTAINER STARTS-->
         <div class="col col-md-8 offset-2 mainsection pl-3">
+          <!--SIDE BAR STARTS-->
+          <div class="sidebar">
+            <div class="col side px-3 pb-5" id="side">
+              <div>
+                <img
+                  class="mb-3"
+                  src="images/Spotify_Logo_RGB_White.png"
+                  alt="spotify logo"
+                  id="logo"
+                />
+
+                <!-- // removed links except for home - SF //  -->
+                <a href="index.html" class="items"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-house-door mr-3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
+                    />
+                  </svg>
+                  Home</a
+                >
+
+                <a href="#" class="items"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-search mr-3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    /></svg
+                  >Search</a
+                >
+
+                <a href="#" class="items"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-collection mr-3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"
+                    /></svg
+                  >Your Library</a
+                >
+              </div>
+              <div>
+                <a href="#" class="items"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-down-circle mr-3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
+                    /></svg
+                  >Install App</a
+                >
+                <hr
+                  class="my-2"
+                  style="
+                    color: rgb(131, 129, 129);
+                    background-color: rgb(131, 129, 129);
+                  "
+                />
+                <div class="row align-items-center pb-4">
+                  <img class="d-flex" src="images/tarkan.jpeg" id="tarkan" />
+                  <a class="flex-row m-0">Tarkan </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SIDE BAR ENDS-->
           <!-- Start Queen jumbotron -->
           <div id="queen-card" class="card bg-dark text-white">
             <div class="card-img-overlay">
@@ -45,9 +134,8 @@
                 <h5 class="text-center h6">33,000,575 MONTHLY LISTENERS</h5>
 
                 <h1 class="display-4 text-center">QUEEN</h1>
-                <p class="text-center font-weight-ligh">
+                <p class="text-center font-weight-light">
                   <br />
-
                   <button id="btn-play" type="button" class="btn btn-success">
                     PLAY
                   </button>
@@ -59,12 +147,14 @@
                     FOLLOW
                   </button>
                 </p>
-                <div class="row mt-5">
-                  <div class="col d-flex">
-                    <div class="nav" id="nav-artist">
-                      <a href="#" class="active">OVERVIEW</a>
-                      <a href="#">RELATED ARTISTS</a>
-                      <a href="#">ABOUT</a>
+                <div class="container-fluid px-0 ml-5 mr-0">
+                  <div class="row">
+                    <div class="col pt-3 d-flex">
+                      <div class="nav" id="navartist">
+                        <a href="#" class="active">Overview</a>
+                        <a href="#">Related Artists</a>
+                        <a href="#">About</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -72,111 +162,198 @@
             </div>
           </div>
           <!-- Ends Queen jumbotron -->
+          <div class="row pt-5 mx-0 artist-cards">
+            <div class="col-12 pb-2 genres">Albums</div>
+            <div
+              class="col-6 col-md-4 col-lg-2 px-1 py-0 artist-anim w-50 h-20"
+              id="card-col"
+            >
+              <div class="card text-white thursday">
+                <img
+                  class="card-img shadow image-fluid w-100"
+                  src="assets/albun_covers/queen1.jpg"
+                  alt="Card image"
+                />
+                <div class="overlay"></div>
+                <div class="card-img">
+                  <p class="card-p mt-1">
+                    Bohemian Rhapsody (The Original Soundtrack)<br /><span
+                      >Queen</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="newClass">
+                <a
+                  href="album-2.html"
+                  class="rent-badge badge"
+                  style="background: none"
+                  id="playbtn"
+                  ><img src="images/play.png" style="background: none"
+                /></a>
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 px-1 py-0 artist-anim w-50 h-20"
+              id="card-col"
+            >
+              <div class="card text-white thursday">
+                <img
+                  class="card-img shadow image-fluid w-100"
+                  src="assets/albun_covers/queen2.jpg"
+                  alt="Card image"
+                />
+                <div class="overlay"></div>
+                <div class="card-img">
+                  <p class="card-p mt-1">On Air<br /><span>Queen</span></p>
+                </div>
+              </div>
+              <div class="newClass">
+                <a
+                  href="album-2.html"
+                  class="rent-badge badge"
+                  style="background: none"
+                  id="playbtn"
+                  ><img src="images/play.png" style="background: none"
+                /></a>
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 px-1 py-0 artist-anim w-50 h-20"
+              id="card-col"
+            >
+              <div class="card text-white thursday">
+                <img
+                  class="card-img shadow image-fluid w-100"
+                  src="assets/albun_covers/queen3.jpg"
+                  alt="Card image"
+                />
+                <div class="overlay"></div>
+                <div class="card-img">
+                  <p class="card-p mt-1">
+                    A Night aAt The Opera<br /><span>Queen</span>
+                  </p>
+                </div>
+              </div>
+              <div class="newClass">
+                <a
+                  href="album-2.html"
+                  class="rent-badge badge"
+                  style="background: none"
+                  id="playbtn"
+                  ><img src="images/play.png" style="background: none"
+                /></a>
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 px-1 py-0 artist-anim w-50 h-20"
+              id="card-col"
+            >
+              <div class="card text-white thursday">
+                <img
+                  class="card-img shadow image-fluid w-100"
+                  src="assets/albun_covers/queen4.jpg"
+                  alt="Card image"
+                />
+                <div class="overlay"></div>
+                <div class="card-img">
+                  <p class="card-p mt-1">
+                    Live At The Rainbow<br /><span>Queen</span>
+                  </p>
+                </div>
+              </div>
+              <div class="newClass">
+                <a
+                  href="album-2.html"
+                  class="rent-badge badge"
+                  style="background: none"
+                  id="playbtn"
+                  ><img src="images/play.png" style="background: none"
+                /></a>
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 px-1 py-0 artist-anim w-50 h-20"
+              id="card-col"
+            >
+              <div class="card text-white thursday">
+                <img
+                  class="card-img shadow image-fluid w-100"
+                  src="assets/albun_covers/queen5.jpg"
+                  alt="Card image"
+                />
+                <div class="overlay"></div>
+                <div class="card-img">
+                  <p class="card-p mt-1">
+                    Live At The Rainbow (Deluxe)<br /><span>Queen</span>
+                  </p>
+                </div>
+              </div>
+              <div class="newClass">
+                <a
+                  href="album-2.html"
+                  class="rent-badge badge"
+                  style="background: none"
+                  id="playbtn"
+                  ><img src="images/play.png" style="background: none"
+                /></a>
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-4 col-lg-2 px-1 py-0 artist-anim w-50 h-20"
+              id="card-col"
+            >
+              <div class="card text-white thursday">
+                <img
+                  class="card-img shadow image-fluid w-100"
+                  src="assets/albun_covers/queen6.jpg"
+                  alt="Card image"
+                />
+                <div class="overlay"></div>
+                <div class="card-img">
+                  <p class="card-p mt-1">
+                    Hungarian Rhapsody (Live In Budapest / 1986)<br /><span
+                      >Queen</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="newClass">
+                <a
+                  href="album-2.html"
+                  class="rent-badge badge"
+                  style="background: none"
+                  id="playbtn"
+                  ><img src="images/play.png" style="background: none"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!--MAIN CONTAINER ENDS -->
-      </div>
-      <div class="row">
-        <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
-          <div class="card text-white">
-            <img
-              class="card-img shadow image-fluid w-100"
-              src="assets/albun_covers/karaokeitaliano.jfif"
-              alt="Card image"
-            />
-            <div class="card-img">
-              <p class="card-p">Italian Karaoke</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
-          <div class="card text-white">
-            <img
-              class="card-img shadow image-fluid w-100"
-              src="https://i.scdn.co/image/ab67706f00000003ad61c9af0cffaed7981cac1c"
-              alt="Card image"
-            />
-            <div class="card-img">
-              <p class="card-p">Lyricists</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
-          <div class="card text-white">
-            <img
-              class="card-img shadow image-fluid w-100"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5X3bxqSlvEcWUfWb8vgRZcSYGzrCr5iKBQ&usqp=CAU"
-              alt="Card image"
-            />
-            <div class="card-img">
-              <p class="card-p">Italy's Frequent Rotation</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
-          <div class="card text-white">
-            <img
-              class="card-img shadow image-fluid w-100"
-              src="https://i.scdn.co/image/ab67706f0000000368ebc79b987ca9f11b61b715"
-              alt="Card image"
-            />
-            <div class="card-img">
-              <p class="card-p">00s Italy</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
-          <div class="card text-white">
-            <img
-              class="card-img shadow image-fluid w-100"
-              src="https://i.scdn.co/image/ab67706f000000021907f15a148948007f05dde9"
-              alt="Card image"
-            />
-            <div class="card-img">
-              <p class="card-p">Cocktail Hour</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 px-1 py-0" id="card-col">
-          <div class="card text-white">
-            <img
-              class="card-img shadow image-fluid w-100"
-              src="https://i.scdn.co/image/ab67706f000000035f4b625f7dfcb4733381bac3"
-              alt="Card image"
-            />
-            <div class="card-img">
-              <p class="card-p">I Love My '90s Hip-Hop</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
     <!--FOOTER STARTS-->
     <footer id="footer-artist">
-      <div class="container-fluid"></div>
-
       <div class="row player d-flex">
-        <div class="col-lg-2 d-flex ml-4 mb-4" id="nowPlaying">
+        <div
+          class="col-lg-2 d-md-none d-sm-none d-lg-block d-flex ml-4 mb-4"
+          id="nowPlaying"
+        >
           <div class="row d-flex align-items-center">
             <img src="images/radio.png" />
-
             <div class="mx-3">
               <p
-                style="
-                  font-size: 14px;
-                  color: rgb(177, 172, 172);
-                  margin-bottom: 5px;
-                "
+                class="creep"
+                style="font-size: 14px; color: #ffff; margin-bottom: 5px"
               >
                 Creep
               </p>
               <p
-                style="
-                  font-size: 10px;
-                  color: rgb(177, 172, 172);
-                  margin-bottom: 0;
-                "
+                class="radiohead"
+                style="font-size: 10px; color: #ffff; margin-bottom: 0"
               >
                 Radiohead
               </p>
@@ -233,7 +410,6 @@
                 d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"
               />
             </svg>
-
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -299,12 +475,7 @@
             <div class="col">
               <p class="mb-0" style="color: #ffff; font-size: 10px">00:00</p>
             </div>
-            <!-- <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-              </div> -->
-            <!-- <div class="col">
-            <input type="range" class="custom-range" min="0" max="5" id="customRange2">
-              </div> -->
+
             <div class="col">
               <hr
                 class="my-0"
