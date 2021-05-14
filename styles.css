@@ -585,6 +585,12 @@ body {
 .tracklist table td:hover {
   opacity: 1;
 }
+.album-cover .card-body i {
+  color: white;
+}
+.album-cover .card-body i:hover {
+  color: var(--spot-green);
+}
 /* **************** END OF ALBUM PAGE ********************** */
 
 /* **************** FOOTER MUSIC PLAYER ********************** */
