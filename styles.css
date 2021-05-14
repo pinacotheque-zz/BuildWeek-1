@@ -543,9 +543,7 @@ body {
 .songs {
   color: #979faa;
 }
-.album-cover div.card-bottom {
-  /*unsure which to keep*/
-}
+
 .album-cover .card-bottom {
   /*unsure which to keep*/
   max-width: 100px;
