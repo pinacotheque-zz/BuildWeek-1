@@ -54,6 +54,51 @@
                 alt="spotify logo"
                 id="logo"
               />
+
+              <!-- first of responsive code by Shakira :) -->
+              <!-- cover menu -->
+              <div id="mobileNav" class="mobileOverlay">
+                <!-- Button to close the overlay navigation -->
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn my-0 mx-0 py-0 px-0"
+                  onclick="closeNav()"
+                  ><i class="fa fa-times fa-xs" id="closebtnshak"></i
+                ></a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content container d-block mt-0 ml-0">
+                  <a href="#" class="mt-0 text-white">Premium</a>
+                  <a href="#" class="mt-0 text-white">Support</a>
+                  <a href="#" class="mt-0 text-white">Download</a>
+                  <a href="#" class="mt-0"
+                    ><i
+                      class="far fa-horizontal-rule img-fluid"
+                      id="navRule"
+                    ></i
+                  ></a>
+                  <a href="#" class="mt-0">Sign Up</a>
+                  <a href="index.html" class="mt-0">Log In</a>
+                </div>
+              </div>
+              <!-- mobile menu -->
+              <div
+                class="
+                  d-xs-block d-sm-block
+                  pr-2
+                  d-md-none d-lg-none
+                  float-right
+                  mt-1
+                "
+              >
+                <i
+                  class="fas fa-bars img-fluid align-self-center"
+                  id="navBarOpen"
+                  onclick="openNav()"
+                ></i>
+              </div>
+              <!-- end of first responsive code-->
+
               <!-- // removed links except for home - SF //  -->
               <a href="index.html" class="items"
                 ><svg
@@ -126,12 +171,159 @@
               />
               <div class="row align-items-center pb-4">
                 <img class="d-flex" src="images/tarkan.jpeg" id="tarkan" />
-                <a class="flex-row m-0">Tarkan </a>
+                <a class="flex-row m-0" id="tarkantext">Tarkan </a>
               </div>
             </div>
           </div>
         </div>
         <!--SIDE BAR ENDS-->
+
+        <!-- SHAKIRA CODE 2 -->
+
+        <!-- MOBILE CONTAINER -->
+        <div
+          class="col-12 px-0 jumbotron jumbotron-fluid mb-0 jumboMob"
+          id="mobcont"
+        >
+          <div class="container-fluid px-0 d-flex">
+            <!-- <img src="./spot-mobile-image.png" class="img-fluid 100vh 100vw"alt="spotify mobile background" id="spotMobBack"> -->
+            <div class="flex-row mx-auto my-auto">
+              <p class="display-4 text-center d-flex">
+                Listening is everything
+              </p>
+              <p class="lead secondheadingmob text-center d-flex">
+                Millions of songs and podcast. No credit card needed.
+              </p>
+              <button
+                type="submit"
+                class="
+                  btn btn-success
+                  getSpot
+                  rounded-pill
+                  px-5
+                  py-2
+                  mx-auto
+                  d-flex
+                "
+              >
+                GET SPOTIFY FREE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid bg-black text-white mobFooter">
+          <div class="row">
+            <div class="col-12">
+              <img
+                class="my-4 py-2"
+                src="images/Spotify_Logo_RGB_White.png"
+                alt="spotify logo"
+                id="logo"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="titleMob mt-0">COMPANY</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">About</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">Jobs</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">For the Record</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="titleMob">COMMUNITIES</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">For Artists</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">Developers</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">Advertising</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">Investors</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">Vendors</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="titleMob">USEFUL LINKS</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">Support</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">Web Player</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p class="contMob">Free Mobile App</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <span class="my-5"></span>
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div class="row">
+            <div class="col-2">
+              <button class="btn round bg-dark socialBut">
+                <i class="fab fa-instagram fa-4x"></i>
+              </button>
+            </div>
+            <div class="col-2">
+              <button class="btn round bg-dark socialBut">
+                <i class="fab fa-twitter fa-4x"></i>
+              </button>
+            </div>
+            <div class="col-2">
+              <button class="btn round bg-dark socialBut">
+                <i class="fab fa-facebook fa-4x"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHAKIRA CODE 2 ENDS -->
 
         <!--MAIN CONTAINER STARTS-->
         <div class="col col-md-8 offset-2 album-cover pl-3">
@@ -162,7 +354,8 @@
                     </div>
                     <div>
                       <p>
-                        <i class="far fa-heart px-2"></i><i class="fas fa-ellipsis-h px-2"></i>
+                        <i class="far fa-heart add-to-favourites px-2"></i
+                        ><i class="fas fa-ellipsis-h px-2"></i>
                       </p>
                     </div>
                   </div>
@@ -212,7 +405,7 @@
               </div>
 
               <i class="far fa-heart favourited"></i>
-<!-- 
+              <!-- 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
