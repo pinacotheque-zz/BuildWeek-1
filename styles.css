@@ -702,7 +702,15 @@ body {
 
   /* PERFECT IF WE HAVE TIME */
 
+  .album-cover {
+    display: none !important;
+  }
+
   #tarkan {  /* Our code may have changed, change accordingly*/
+    display: none !important;
+  }
+
+  #tarkantext {  /* Our code may have changed, change accordingly*/
     display: none !important;
   }
 
