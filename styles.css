@@ -458,6 +458,7 @@ flex-direction: row;
     padding: 8px;
     text-decoration: none;
     font-size: 20px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s;
@@ -496,6 +497,7 @@ flex-direction: row;
     color: var(--spot-green);
     font-weight: bolder;
     font-size: 30px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
     margin-left: 30vw;
     margin-right: 30vw;
     margin-top: 30vh;
@@ -505,6 +507,7 @@ flex-direction: row;
     position: relative;
     color: var(--spot-green);
     font-size: 15px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
     margin-top: 2vh;
     margin-right: 25vw;
     margin-left: 25vw;
@@ -520,6 +523,7 @@ flex-direction: row;
     color: gray;
     font: bolder;
     font-size: 10px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
     margin-top: 30px;
   }
 
@@ -528,7 +532,12 @@ flex-direction: row;
   }
 
   .socialBut {
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius: 25px;
+    font-size: 8px;
+    text-align: center;
   }
   
 
@@ -539,6 +548,7 @@ flex-direction: row;
   .mobileOverlay a {font-size: 20px}
   .mobileOverlay .closebtn {
     font-size: 40px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
     top: 15px;
     right: 35px;
   }
