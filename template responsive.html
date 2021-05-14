@@ -32,14 +32,14 @@
                 <div id="mobileNav" class="mobileOverlay">
 
                   <!-- Button to close the overlay navigation -->
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times fa-xs"></i></a>
+                  <a href="javascript:void(0)" class="closebtn my-0 mx-0 py-0 px-0" onclick="closeNav()"><i class="fa fa-times fa-xs" id="closebtnshak"></i></a>
                 
                   <!-- Overlay content -->
                   <div class="overlay-content container d-block mt-0 ml-0">
-                    <a href="#" class="mt-0">Premium</a>
-                    <a href="#" class="mt-0">Support</a>
-                    <a href="#" class="mt-0">Download</a>
-                    <a href="#" class="mt-0"><i class="fas fa-horizontal-rule img-fluid" id="navRule"></i></a>
+                    <a href="#" class="mt-0 text-white">Premium</a>
+                    <a href="#" class="mt-0 text-white">Support</a>
+                    <a href="#" class="mt-0 text-white">Download</a>
+                    <a href="#" class="mt-0"><i class="far fa-horizontal-rule img-fluid" id="navRule"></i></a>
                     <a href="#" class="mt-0">Sign Up</a>
                     <a href="#" class="mt-0">Log In</a>
                   </div>
@@ -69,6 +69,23 @@
           </div>
           <!--SIDE BAR ENDS-->
 
+          <!-- MOBILE CONTAINER -->
+          <div class="col-12 px-0 jumbotron jumbotron-fluid" id="mobcont">
+            <div class="container-fluid px-0 d-flex">
+              <!-- <img src="./spot-mobile-image.png" class="img-fluid 100vh 100vw"alt="spotify mobile background" id="spotMobBack"> -->
+              <div class="flex-row mx-auto my-auto">
+                
+                  <p class="display-4 text-center d-flex">Listening is everything</p>
+                  <p class="lead secondheadingmob text-center d-flex">Millions of songs and podcast. No credit card needed.</p>
+                  <button type="submit" class="btn btn-success getSpot rounded-pill px-5 py-2 mx-auto d-flex">GET SPOTIFY FREE</button>
+              </div>
+
+            </div>
+
+          
+
+          </div>
+
           <!--MAIN CONTAINER STARTS-->            
           <div class="col col-md-8 offset-2 mainsection pl-3">
 
@@ -83,7 +100,7 @@
     <footer id="footer-home" >
     <div class="container-fluid"></div>
     
-    <div class="row player d-flex ">
+    <div class="row player d-flex">
 
         <div class=" col-lg-2 d-flex  ml-4 mb-4" id="nowPlaying">
         <div class="row d-flex align-items-center">

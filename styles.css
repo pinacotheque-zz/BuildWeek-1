@@ -312,6 +312,7 @@ bottom: 0;
 height: 75px; /* IMPORTANT: has been matched to screenshot (was 100px) */
 width: 100%;
 }
+
 .player{
 flex-wrap: nowrap;
 flex-direction: row;
@@ -342,7 +343,12 @@ flex-direction: row;
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+#mobcont {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  /* DISPLAY FOR CURRENT ELEMENTS */
   .sidebar {
     width: 100%;
     height: 50px;
@@ -365,7 +371,13 @@ flex-direction: row;
 
   .sidebar hr {
     display: none;
+  } 
+
+  footer {
+    display: none !important;
+    z-index: 0 !important;
   }
+
 
   #tarkan {
     display: none !important;
@@ -387,6 +399,17 @@ flex-direction: row;
   .mobileNav{
     display: block;
   }
+
+  #mobcont {
+    display: block;
+  }
+
+  .jumbotron {
+    background-image: url("./spot-mobile-image.png");
+    background-size: cover;
+    height: 100vh;
+    width: 60vw;
+  }
 }
 
 /* @media screen and (max-width: 400px) {
@@ -396,7 +419,7 @@ flex-direction: row;
   }
 } */
 /* SIDEBAR MENU */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .mobileOverlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 100%;
@@ -406,7 +429,7 @@ flex-direction: row;
     right: 0;
     top: 0;
     background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0); /* Black w/opacity */
+    background-color: rgba(0, 0, 0); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s;
    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
@@ -415,7 +438,7 @@ flex-direction: row;
   /* Position the content inside the overlay */
   .overlay-content {
     position: relative;
-    top: 3vh; /* 25% from the top */
+    top: 4%; /* 25% from the top */
     width: 100%; /* 100% width */
 
     text-align: left; /* Centered text/links */
@@ -437,22 +460,54 @@ flex-direction: row;
   #navRule {
     height: 20px !important;
     width: auto !important;
+    color: white !important;
   }
 
 
   /* When you mouse over the navigation links, change their color */
-  .mobileOverlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+  .mt-0:hover {
+    color: var(--spot-green) !important;
+  }
+
+  #closebtnshak {
+    height: 20px;
+    width: auto;
   }
 
   /* Position the close button (top right corner) */
   .mobileOverlay .closebtn {
     position: absolute;
     z-index: 4;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 1%;
+    right: 3%;
+    font-size: 30px;
   }
+
+  .display-4{
+    position: relative;
+    color: var(--spot-green);
+    font-weight: bolder;
+    font-size: 30px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 30vh;
+  }
+
+  .secondheadingmob {
+    position: relative;
+    color: var(--spot-green);
+    font-size: 15px;
+    margin-top: 2vh;
+    margin-right: 25vw;
+    margin-left: 25vw;
+    justify-content: space-around;
+
+  }
+
+  .getSpot{
+    color: rgb(43, 86, 204);
+  }
+
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -465,7 +520,7 @@ flex-direction: row;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .mobileOverlay a {
     display: none;
 }
