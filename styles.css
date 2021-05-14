@@ -114,7 +114,7 @@ body {
 
 /* **************** HOME CARDS ********************** */
 #home-cards {
-  height: 120vh !important; /*was 97vh i don't remember why*/
+  height: 100% !important; /*was 97vh i don't remember why*/
   background-color: var(--spot-blue);
   background: var(--spot-blue); /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -527,7 +527,8 @@ body {
   font-size: 1.3rem;
   color: #979faa;
 }
-.album-cover .card-body p, .album-cover .card-body a {
+.album-cover .card-body p,
+.album-cover .card-body a {
   text-align: center;
   color: #979faa;
 }
@@ -542,9 +543,11 @@ body {
 .songs {
   color: #979faa;
 }
-.album-cover div.card-bottom { /*unsure which to keep*/
+.album-cover div.card-bottom {
+  /*unsure which to keep*/
 }
-.album-cover .card-bottom { /*unsure which to keep*/
+.album-cover .card-bottom {
+  /*unsure which to keep*/
   max-width: 100px;
 }
 #btn-play-album {
