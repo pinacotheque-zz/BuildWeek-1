@@ -480,7 +480,7 @@ body {
 .artist-anim .rent-badge {
   position: absolute;
   visibility: hidden;
-  top: 125px;
+  top: 100px;
   right: 2px;
   font-size: 1.2em;
 }
@@ -666,7 +666,6 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     align-content: center;
-    
   }
   #logo {
     float: left;
@@ -680,10 +679,11 @@ body {
   }
 
   .sidebar hr {
-    display: none;  /* Our code may have changed */
-  } 
+    display: none; /* Our code may have changed */
+  }
 
-  footer {  /* Our code may have changed */
+  footer {
+    /* Our code may have changed */
     display: none !important;
     z-index: 0 !important;
   }
@@ -706,15 +706,18 @@ body {
     display: none !important;
   }
 
-  #tarkan {  /* Our code may have changed, change accordingly*/
+  #tarkan {
+    /* Our code may have changed, change accordingly*/
     display: none !important;
   }
 
-  #tarkantext {  /* Our code may have changed, change accordingly*/
+  #tarkantext {
+    /* Our code may have changed, change accordingly*/
     display: none !important;
   }
 
-  #divIndiv{  /* Our code may have changed - this is the row that used to have Tarkan */
+  #divIndiv {
+    /* Our code may have changed - this is the row that used to have Tarkan */
     display: none;
   }
 
@@ -727,7 +730,7 @@ body {
     margin-left: 0;
   }
 
-  .mobileNav{
+  .mobileNav {
     display: block;
   }
 
@@ -756,18 +759,18 @@ body {
 /* SIDEBAR MENU */
 @media screen and (max-width: 769px) {
   .mobileOverlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: -0;
     position: fixed; /* Stay in place */
     z-index: 3; /* Sit on top */
     right: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgb(0, 0, 0); /* Black fallback color */
     background-color: rgba(0, 0, 0); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s;
-   /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
 
   /* Position the content inside the overlay */
@@ -790,7 +793,7 @@ body {
     display: block; /* Display block instead of inline */
     transition: 0.3s;
     z-index: 3;
-     /* Transition effects on hover (color) */
+    /* Transition effects on hover (color) */
   }
 
   #navRule {
@@ -798,7 +801,6 @@ body {
     width: auto !important;
     color: white !important;
   }
-
 
   /* When you mouse over the navigation links, change their color */
   .mt-0:hover {
@@ -819,7 +821,7 @@ body {
     font-size: 30px;
   }
 
-  .display-4{
+  .display-4 {
     position: relative;
     color: var(--spot-green);
     font-weight: bolder;
@@ -839,10 +841,9 @@ body {
     margin-right: 25vw;
     margin-left: 25vw;
     justify-content: space-around;
-
   }
 
-  .getSpot{
+  .getSpot {
     color: rgb(43, 86, 204);
   }
 
@@ -866,13 +867,13 @@ body {
     font-size: 8px;
     text-align: center;
   }
-  
-
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .mobileOverlay a {font-size: 20px}
+  .mobileOverlay a {
+    font-size: 20px;
+  }
   .mobileOverlay .closebtn {
     font-size: 40px;
     font-family: "Circular Spotify Tx T Black", sans-serif;
@@ -884,5 +885,5 @@ body {
 @media screen and (min-width: 769px) {
   .mobileOverlay a {
     display: none;
-}
+  }
 }
