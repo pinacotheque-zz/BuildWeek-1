@@ -516,7 +516,17 @@ flex-direction: row;
     color: rgb(43, 86, 204);
   }
 
-  .titleMob {}
+  .titleMob {
+    color: gray;
+    font: bolder;
+    font-size: 10px;
+    margin-top: 30px;
+  }
+
+  .contMob {
+    font-size: 14px;
+  }
+  
 
 }
 
