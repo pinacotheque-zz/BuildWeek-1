@@ -43,16 +43,11 @@
   </head>
   <body>
     <div class="container-fluid" id="home-cards">
-      <div class="row overflow-auto">
-        <div class="sidebar">
-          <div class="col side px-3" id="side">
-            <div>
-              <img
-                class="mb-3"
-                src="images/Spotify_Logo_RGB_White.png"
-                alt="spotify logo"
-                id="logo"
-              />
+        <div class="row">
+          <div class="sidebar">
+            <div class="col side px-3" id="side">
+              <div>
+                <img class="mb-3" src="images/Spotify_Logo_RGB_White.png" alt="spotify logo" id="logo"/>
 
               <!-- // removed links except for home - SF //  -->
               <a href="#home" class="items active"
@@ -86,166 +81,144 @@
                 >Search</a
               >
 
-              <a href="#" class="items"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  fill="currentColor"
-                  class="bi bi-collection mr-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"
-                  /></svg
-                >Your Library</a
-              >
-            </div>
-            <div>
-              <a href="#" class="items"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-down-circle mr-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
-                  /></svg
-                >Install App</a
-              >
-              <hr
-                class="my-2"
-                style="
-                  color: rgb(131, 129, 129);
-                  background-color: rgb(131, 129, 129);
-                "
-              />
-              <div class="row align-items-center pb-4">
-                <img class="d-flex" src="images/tarkan.jpeg" id="tarkan" />
-                <a class="flex-row m-0">Tarkan </a>
+                <a href="#" class="items"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-collection mr-3" viewBox="0 0 16 16"><path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/></svg>Your Library</a>
+              </div>
+              <div>
+                <a type="button" href="login.html" class="btn btn-light btn-signup badge-pill">Login</button><br>
+                <a href="#" class="items"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle mr-3" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                </svg>Install App</a>
+                <hr class="my-2" style=" color:rgb(131, 129, 129);background-color: rgb(131, 129, 129);">
+                <div class="row align-items-center pb-4"><img class="d-flex" src="images/tarkan.jpeg" id="tarkan"/> <a class="flex-row m-0" >Tarkan </a></div>
               </div>
             </div>
           </div>
-        </div>
+            
+          <div class="col col-md-8 offset-2 mainsection pl-3">
+              <!-- sarah here-->
+              <div class="container-fluid px-0 ml-5 mr-0">
+                <div class="row">
+                    <div class="col pt-3 d-flex">
+                        <div class="nav" id="topnav">
+                          <a href="#" class="active">Trending</a>
+                          <a href="#">Podcast</a>
+                          <a href="#">Moods and Genres</a>
+                          <a href="#">New Releases</a>
+                          <a href="#">Discover</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 mx-0 card-collection">
+                    <div class="col-12 pb-2 allcaps">
+                        #THROWBACKTHURSDAY
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim w-50 h-20" id="card-col">
+                        <div class="card text-white thursday">
+                            <img class="card-img shadow image-fluid w-100 " src="assets/albun_covers/karaokeitaliano.jfif" alt="Card image">
+                            <div class="overlay"></div>
+                            <div class="card-img">
+                              <p class="card-p mt-1">Italian Karaoke</p>
+                            </div>     
+                        </div>
+                        <div class="newClass">
+                          <a href="album-2.html" class="rent-badge badge" style="background: none;" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                        </div>
+                    </div>
 
-        <div class="col col-md-8 offset-3 mainsection pl-3">
-          <!-- sarah here-->
-          <div class="container pl-1">
-            <div class="row">
-              <div class="col pt-2 d-flex">
-                <div class="nav" id="topnav">
-                  <a href="#" class="active">Trending</a>
-                  <a href="#">Podcast</a>
-                  <a href="#">Moods and Genres</a>
-                  <a href="#">New Releases</a>
-                  <a href="#">Discover</a>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="assets/albun_covers/liricisti.jfif" alt="Card image">
+                            <div class="overlay"></div>
+                            <a href="album-3.html" class="rent-badge badge" style="background: none;" data-trigger="hover" data-toggle="popover" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                            <div class="card-img">
+                              <p class="card-p mt-1">Lyricists</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="assets/albun_covers/altarotazione.jfif" alt="Card image">
+                            <div class="overlay"></div>
+                            <a href="#" class="rent-badge badge" style="background: none;" data-trigger="hover" data-toggle="popover" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                            <div class="card-img">
+                              <p class="card-p mt-1">Italy's Frequent Rotation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="assets/albun_covers/anni00.jfif" alt="Card image">
+                            <div class="overlay"></div>
+                            <a href="#" class="rent-badge badge" style="background: none;" data-trigger="hover" data-toggle="popover" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                            <div class="card-img">
+                              <p class="card-p mt-1">00s Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="assets/albun_covers/aperitivotime.jfif" alt="Card image">
+                            <div class="overlay"></div>
+                            <a href="#" class="rent-badge badge" style="background: none;" data-trigger="hover" data-toggle="popover" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                            <div class="card-img">
+                              <p class="card-p mt-1">Cocktail Hour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="assets/albun_covers/ilovemy90shiphop.jfif" alt="Card image">
+                            <div class="overlay"></div>
+                            <a href="#" class="rent-badge badge" style="background: none;" data-trigger="hover" data-toggle="popover" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                            <div class="card-img">
+                              <p class="card-p mt-1">I Love My '90s Hip-Hop</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="row pt-4 mr-0 ml-0 card-collection">
-              <div class="col-12 pb-2 allcaps">#THROWBACKTHURSDAY</div>
-              <div
-                class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim w-50 h-20"
-                id="card-col"
-              >
-                <div class="card text-white thursday">
-                  <img
-                    class="card-img shadow image-fluid w-100"
-                    src="https://i.scdn.co/image/ab67706f00000003dafe7903bdd85921f50f1a48"
-                    alt="Card image"
-                  />
-                  <div class="overlay"></div>
-                  <div class="card-img">
-                    <p class="card-p mt-1">Italian Karaoke</p>
-                  </div>
-                </div>
-                <div class="newClass">
-                  <a
-                    href="#"
-                    class="rent-badge badge"
-                    style="background: none"
-                    id="playbtn"
-                    ><img src="images/play.png" style="background: none"
-                  /></a>
-                </div>
-              </div>
-
-              <div
-                class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim"
-                id="card-col"
-              >
-                <div class="card text-white">
-                  <img
-                    class="card-img shadow image-fluid w-100"
-                    src="https://i.scdn.co/image/ab67706f00000003ad61c9af0cffaed7981cac1c"
-                    alt="Card image"
-                  />
-                  <div class="overlay"></div>
-                  <a
-                    href="#"
-                    class="rent-badge badge"
-                    style="background: none"
-                    data-trigger="hover"
-                    data-toggle="popover"
-                    id="playbtn"
-                    ><img src="images/play.png" style="background: none"
-                  /></a>
-                  <div class="card-img">
-                    <p class="card-p mt-1">Lyricists</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim"
-                id="card-col"
-              >
-                <div class="card text-white">
-                  <img
-                    class="card-img shadow image-fluid w-100"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5X3bxqSlvEcWUfWb8vgRZcSYGzrCr5iKBQ&usqp=CAU"
-                    alt="Card image"
-                  />
-                  <div class="overlay"></div>
-                  <a
-                    href="#"
-                    class="rent-badge badge"
-                    style="background: none"
-                    data-trigger="hover"
-                    data-toggle="popover"
-                    id="playbtn"
-                    ><img src="images/play.png" style="background: none"
-                  /></a>
-                  <div class="card-img">
-                    <p class="card-p mt-1">Italy's Frequent Rotation</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim"
-                id="card-col"
-              >
-                <div class="card text-white">
-                  <img
-                    class="card-img shadow image-fluid w-100"
-                    src="https://i.scdn.co/image/ab67706f0000000368ebc79b987ca9f11b61b715"
-                    alt="Card image"
-                  />
-                  <div class="overlay"></div>
-                  <a
-                    href="#"
-                    class="rent-badge badge"
-                    style="background: none"
-                    data-trigger="hover"
-                    data-toggle="popover"
-                    id="playbtn"
-                    ><img src="images/play.png" style="background: none"
-                  /></a>
-                  <div class="card-img">
-                    <p class="card-p mt-1">00s Italy</p>
+                <div class="row pt-4 ml-0 card-collection">
+                    <div class="col-12 pb-2 genres">
+                        Classifiche
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="assets/albun_covers/top50italy.jpg" alt="Card image">
+                            <div class="overlay"></div>
+                            <a href="#" class="rent-badge badge" style="background: none;" data-trigger="hover" data-toggle="popover" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                            <div class="card-img">
+                              <p class="card-p mt-1">Top 50 - Italy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="assets/albun_covers/top50global.jpg" alt="Card image">
+                            <div class="overlay"></div>
+                            <a href="#" class="rent-badge badge" style="background: none;" data-trigger="hover" data-toggle="popover" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                            <div class="card-img">
+                              <p class="card-p mt-1">Top 50 - Global</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="assets/albun_covers/viral60global.jpg" alt="Card image">
+                            <div class="overlay"></div>
+                            <a href="#" class="rent-badge badge" style="background: none;" data-trigger="hover" data-toggle="popover" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                            <div class="card-img">
+                              <p class="card-p mt-1">Viral 50 - Global</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 px-1 py-0 cardForAnim" id="card-col">
+                        <div class="card text-white">
+                            <img class="card-img shadow image-fluid w-100" src="assets/albun_covers/viral50italy.jfif" alt="Card image">
+                            <div class="overlay"></div>
+                            <a href="#" class="rent-badge badge" style="background: none;" data-trigger="hover" data-toggle="popover" id="playbtn" ><img src="images/play.png" style="background: none;"/></a>
+                            <div class="card-img">
+                              <p class="card-p mt-1">Viral 50 - Italy</p>
+                            </div>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -297,7 +270,63 @@
                   <div class="card-img">
                     <p class="card-p mt-1">I Love My '90s Hip-Hop</p>
                   </div>
+              </div>                           
+        </div>  
+
+    </div>
+           
+
+    <footer id="footer-home" >
+    
+    <div class="row player d-flex ">
+
+        <div class=" col-lg-2 d-md-none d-sm-none d-lg-block d-flex  ml-4 mb-4 " id="nowPlaying">
+        <div class="row d-flex align-items-center">
+            
+                <img src="images/radio.png"/>  
+                <div class="mx-3 ">
+                <p class="creep" style="font-size:14px;color: #ffff; margin-bottom: 5px;">Creep</p>
+                <p class="radiohead" style="font-size: 10px; color: #ffff;margin-bottom: 0;">Radiohead</p> 
                 </div>
+            
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart ml-1" style="color: rgb(177, 172, 172);" viewBox="0 0 16 16">
+                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-dock ml-3 " style="color: rgb(177, 172, 172);" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 5H1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5zm0-1H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v1zm1-1a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3z"/>
+                        <path d="M3 11.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm4 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm4 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                </svg>                              
+        </div>
+        </div>
+        <div class=" col-lg-8  process d-flex justify-items-center mt-1">        
+        <div class="row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-shuffle" style="color:rgb(177, 172, 172);" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+            <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-skip-start-fill ml-5" style="color:rgb(177, 172, 172);" viewBox="0 0 16 16">
+            <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0V4z"/>
+          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-play-circle mx-5 mb-1" style="color:rgb(177, 172, 172);" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+          </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-skip-end-fill mr-5" style="color:rgb(177, 172, 172);" viewBox="0 0 16 16">
+            <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0V4z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat" style="color:rgb(177, 172, 172)" viewBox="0 0 16 16">
+            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+            <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+          </svg>
+        </div>
+
+        <div class="row songDur align-items-center my-1 ">
+            <div class="col">
+            <p class=" mb-0" style="color:#ffff;font-size: 10px;">00:00</p>
+          </div>
+            
+              <div class="col ">
+              <hr  class="my-0" style=" width:600px; color: #ffff; height: 3px; margin-bottom: 10px; border: 1px solid rgb(88, 87, 87);background-color: rgb(88, 87, 87);border-radius: 3px;">
               </div>
             </div>
             <div class="row pt-4 ml-0 card-collection">
