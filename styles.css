@@ -526,6 +526,10 @@ flex-direction: row;
   .contMob {
     font-size: 14px;
   }
+
+  .socialBut {
+    border-radius: 50%;
+  }
   
 
 }
